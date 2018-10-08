@@ -5,8 +5,7 @@ You will add to your notebook in bullet form for each week what you have done. P
 * Attended lecture
 * reviewed python
 
-# Week Fri 07/31/18 - 13/06/18
+# Week Fri 09/14/18 - 09/21/18
 
-In case you did not work during the week, you still need to report it with 
+Proposed creating a chapter on Azure data services.
 
-* N/A
