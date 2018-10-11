@@ -11,4 +11,4 @@ A pipeline is a task within a data factory that comprises activities. For exampl
 An activity within Data Factory is either a copy utility or a data transformation utility. A data copy utility has numerous sources and targets which can move data between cloud and on-premisis relational and NoSQL databases. A data transformation utility can manipulate the data from the previously mentioned data stores using Data Lake U-SQL queries, an HDInsight Hive or Pig activities.
 
 
-
+#### Scheduling
