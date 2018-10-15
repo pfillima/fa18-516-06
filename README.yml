@@ -11,7 +11,7 @@ section:
       url: https://github.com/cloudmesh-community/book/chapters/
     - title: Cloud Computing Using Visual Studio
       url: https://github.com/cloudmesh-community/book/chapters/
-chapter:
+paper:
     - title: Azure Data Services
       keyword: Azure Data
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md         
