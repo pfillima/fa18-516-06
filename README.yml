@@ -6,7 +6,7 @@ owner:
   community: "e516"
 section:
     - title: Azure Data Factory
-      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureDataFactory.md
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureDataFactory.md 
     - title: Azure IoT
       url: https://github.com/cloudmesh-community/book/chapters/
     - title: Cloud Computing Using Visual Studio
