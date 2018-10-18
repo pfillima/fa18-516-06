@@ -1,5 +1,8 @@
 ## Azure Data Services
 
+This chapter focuses on the many data services within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytic services.
+
+
     Databases
         Azure SQL Database
         Azure MySQL Database
