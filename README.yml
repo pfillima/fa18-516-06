@@ -8,12 +8,12 @@ section:
     - title: Azure Data Factory
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureDataFactory.md 
     - title: Azure IoT
-      url: https://github.com/cloudmesh-community/book/chapters/
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureIoT.md
     - title: Cloud Computing Using Visual Studio
-      url: https://github.com/cloudmesh-community/book/chapters/
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/VisualStudio.md
 paper:
     - title: Azure Data Services
-      keyword: Azure Data
+      keyword: Azure Data Services
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md         
 project:
     - title: TBD
