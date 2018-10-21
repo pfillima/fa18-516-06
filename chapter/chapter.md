@@ -9,6 +9,8 @@ The Azure SQL database is the cloud-based, SQL Server database as a service, rel
 
 #### Pricing Models
 
+There are two purchasing models. The Database Transaction Unit (DTU) based model and the vCore based model. The DTU model uses a measure using a combination of processor, disk IO, and memory. 
+
 
 
 ### Azure MySQL Database
