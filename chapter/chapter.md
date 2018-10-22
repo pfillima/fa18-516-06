@@ -12,7 +12,7 @@ The Azure SQL database is the cloud-based, SQL Server database as a service, rel
 
 #### Advantages
 
-The biggest advantage to using an Azure SQL database rather than an on-premesis SQL database is scalability. Users can choose from many options of pricing model depending upon the utilization of their needs. Companies can start out with a low-cost Azure SQL database having a fully-managed database platform without the expense of an on-premises server and administrative costs and quickly scale up to a higher-cost pricing model with expanded system resources. Other major benefits are database up-time and low administrative duties with operational database administrator or Windows server administration duties.
+The biggest advantage to using an Azure SQL database rather than an on-premesis SQL database is scalability. Users can choose from many options of pricing model depending upon the utilization of their needs. Companies can start out with a low-cost Azure SQL database having a fully-managed database platform without the expense of an on-premises server and administrative costs and quickly scale up to a higher-cost pricing model with expanded system resources. Other major benefits are database up-time and low administrative duties with operational database administrator or Windows server administration duties [fa18-516-06-AzureSQL2].
 
 #### Pricing Models
 
@@ -20,7 +20,17 @@ There are two purchasing models. The Database Transaction Unit (DTU) based model
 
 #### Creating an Azure SQL Database
 
-The creation of an Azure 
+The creation of an Azure SQL database is very easy:
+    1) Log in to the Azure portal
+    2) From the Azure portal, select "Create a Resource", then choose "SQL Database" within "Databases"
+    3) Enter the name of the database to create
+    4) Enter the container for the resource group, create a new resource group, if desired
+    5) Choose if this created database will use an elastic pool
+    6) Select the pricing model
+    7) Click the "Create" button
+    
+
+    
 
 
 ### Azure MySQL Database
