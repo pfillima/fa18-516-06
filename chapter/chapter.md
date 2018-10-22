@@ -21,16 +21,15 @@ There are two purchasing models. The Database Transaction Unit (DTU) based model
 #### Creating an Azure SQL Database
 
 The creation of an Azure SQL database is very easy:
-    1. Log in to the Azure portal
-    2. From the Azure portal, select "Create a Resource", then choose "SQL Database" within "Databases"
-    3. Enter the name of the database to create
-    4. Enter the container for the resource group, create a new resource group, if desired
-    5. Choose if this created database will use an elastic pool
-    6. Select the pricing model
-    7. Click the "Create" button
-    
 
-    
+1. Log in to the Azure portal
+2. From the Azure portal, select "Create a Resource", then choose "SQL Database" within "Databases"
+3. Enter the name of the database to create
+4. Enter the container for the resource group, create a new resource group, if desired
+5. Choose if this created database will use an elastic pool
+6. Select the pricing model
+7. Click the "Create" button
+
 
 
 ### Azure MySQL Database
