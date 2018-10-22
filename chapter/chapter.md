@@ -1,6 +1,6 @@
 # Azure Data Services
 
-This chapter focuses on the many data services within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
+This chapter focuses on an overview of the many data services within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
 
 ## Database Products
 
@@ -9,7 +9,7 @@ The Azure SQL database is the cloud-based, SQL Server database as a service, rel
 
 #### Pricing Models
 
-There are two purchasing models. The Database Transaction Unit (DTU) based model and the vCore based model. The DTU model uses a measure using a combination of processor, disk IO, and memory.  [fa18-516-06-AzureSQL1]
+There are two purchasing models. The Database Transaction Unit (DTU) based model and the vCore based model. The DTU model uses a measure using a combination of "compute, memory, and storage" [fa18-516-06-AzureSQL1]. In the DTU purchasing model, users can choose from three different configurations, Basic, Standard, and Premium, corresponding to the extent of the needed resources. Within the vCore model, users can individually choose the compute, memory, and storage values. The Gen4 generation allows for up to 24 virtual CPU cores and 168 GB memory and the Gen5 generation allows for up to 80 virtual cores and 408 GB memory. The maximum data size within the Gen4 is 1 TB and with Gen5 it is 4 TB.
 
 
 
