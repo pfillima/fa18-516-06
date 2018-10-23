@@ -51,11 +51,12 @@ Cosmos DB uses "turnkey global distribution" by distributing data near to where 
 Cosmos DB service has high availability and throughput service level agreements, including a 99.999% availability and IO reads of less than 10 ms and IO writes of under 15 ms [fa18-516-06-AzureCosmosDB1]. Users needing a highly available NoSQL database at a global scale, such as global web application databases, could gain from using Cosmos DB.
 
 
+### Azure SQL Data Warehouse
+
+
+
     
 ## Analytics
-
-### Azure SQL Data Warehouse
-        
         
 ### Azure HDInsight (Kafka)
         
