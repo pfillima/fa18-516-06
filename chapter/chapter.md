@@ -37,14 +37,14 @@ Once the database has been created, we can use Microsoft Visual Studio as the de
 ![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/Azure_SQLDBConnect.JPG)
 
 
-### Azure MySQL Database and Azure PostgreSQL Database
+### Azure MySQL PostgreSQL, MariaDB Databases
 
-Azure MySQL is the MySQL community version database as a service and similarly the Azure PostgreSQL database is the cloud-based community version of the PostgreSQL database. Much like Azure SQL, it has the benefits of using a cloud-based database service, for example scalability and uptime. These Azure relational database allow users to keep using their desired database platforms in the Azure cloud environment.
+Within the Azure ecosystem, it is possible to use three different open-source databases, MySQL, PostgreSQL, and MariaDB. Each of these are the cloud-based community versions of the databases. Much like Azure SQL, these have the benefits of using a cloud-based database service, for example scalability and uptime. These Azure relational database allow users to keep using their desired open-source database platforms in the Azure cloud environment [fa18-516-06-AzureOpenSourceDB].
 
 
 
 ### Cosmos DB
-    
+
     
     
     
