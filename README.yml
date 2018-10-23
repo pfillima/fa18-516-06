@@ -4,16 +4,19 @@ owner:
   lastname: "Filliman"
   hid: "fa18-516-06"
   community: "e516"
-  
 section:
-    - title: TBD
-         url: https://github.com/cloudmesh-community/book/chapters/...
-chapter:
-    - title: title of the chapter
-         url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md         
+    - title: Azure Data Factory
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureDataFactory.md 
+    - title: Azure IoT
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureIoT.md
+    - title: Cloud Computing Using Visual Studio
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/VisualStudioCloudComputing.md
+paper:
+    - title: Azure Data Services
+      keyword: Azure Data Services
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md         
 project:
     - title: TBD
-         url: url in your hid space or that of your partner
-other:
-    - activity: spell checked md document
-         url: put url here
+      keyword: Azure Data
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md    
+
