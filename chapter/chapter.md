@@ -30,7 +30,6 @@ The creation of an Azure SQL database is very easy:
 6. Select the pricing model
 7. Click the "Create" button
 
-Inline-style: 
 ![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/Azure_CreateSQLDatabase.JPG)
 
 
