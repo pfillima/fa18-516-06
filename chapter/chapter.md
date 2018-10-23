@@ -12,7 +12,7 @@ The Azure SQL database is the cloud-based, SQL Server database as a service, rel
 
 #### Advantages
 
-The biggest advantage to using an Azure SQL database rather than an on-premesis SQL database is scalability. Users can choose from many options of pricing model depending upon the utilization of their needs. Companies can start out with a low-cost Azure SQL database having a fully-managed database platform without the expense of an on-premises server and administrative costs and quickly scale up to a higher-cost pricing model with expanded system resources. Other major benefits are database up-time and low administrative duties with operational database administrator or Windows server administration duties [fa18-516-06-AzureSQL2].
+The biggest advantage to using an Azure SQL database rather than an on-premesis SQL database is scalability. Users can choose from many options of pricing model depending upon the utilization of their needs. Companies can start out with a low cost Azure SQL database having a fully managed database platform without the expense of an on-premises server and administrative costs and quickly scale up to a higher-cost pricing model with expanded system resources. Other major benefits are database high availability and low administrative duties with operational database administrator or Windows server administration duties [fa18-516-06-AzureSQL2].
 
 #### Pricing Models
 
@@ -37,12 +37,9 @@ Once the database has been created, we can use Microsoft Visual Studio as the de
 ![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/Azure_SQLDBConnect.JPG)
 
 
-### Azure MySQL Database
+### Azure MySQL Database and Azure PostgreSQL Database
 
-
-
-### Azure PostgreSQL Database ??
-
+Azure MySQL is the MySQL community version database as a service and similarly the Azure PostgreSQL database is the cloud-based community version of the PostgreSQL database. Much like Azure SQL, it has the benefits of using a cloud-based database service, for example scalability and uptime. These Azure relational database allow users to keep using their desired database platforms in the Azure cloud environment.
 
 
 
