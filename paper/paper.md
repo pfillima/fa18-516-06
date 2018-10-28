@@ -57,7 +57,7 @@ The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive 
 
 One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse. 
 
-![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/Azure_SQLDataWarehouse.JPG)
+![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/Azure_SQLDW1.JPG)
 
 
 Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time.
