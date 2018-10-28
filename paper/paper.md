@@ -55,12 +55,13 @@ Cosmos DB service has high availability and throughput service level agreements,
 
 The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive parallel processing for use with querying large amounts of data. The Azure SQL Data Warehouse uses Azure virtual machines for the compute nodes and Azure page blobs for storage. This separation allows for scalability for compute and storage independently [fa18-516-06-AzureSQLDataWarehouse1].
 
-One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse. 
+One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse [fa18-516-06-AzureSQLDataWarehouse2]. 
 
 ![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/Azure_SQLDW1.jpg)
+[fa18-516-06-AzureSQLDataWarehouse3]
 
 
-Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time.
+Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time. Much like Azure SQL Database described above, this has high-avilability and backup and recoverability features as well [fa18-516-06-AzureSQLDataWarehouse1].
 
 
     
