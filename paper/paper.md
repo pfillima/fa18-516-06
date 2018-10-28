@@ -53,6 +53,8 @@ Cosmos DB service has high availability and throughput service level agreements,
 
 ### Azure SQL Data Warehouse
 
+The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive parallel processing for use with querying large amounts of data. The Azure SQL Data Warehouse uses Azure virtual machines for the compute nodes and Azure page blobs for storage. This separation allows for scalability for compute and storage independently.
+
 
 
 
