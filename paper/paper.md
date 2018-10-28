@@ -12,7 +12,7 @@ The Azure SQL database is the cloud-based, SQL Server database as a service, rel
 
 #### Advantages
 
-The biggest advantage to using an Azure SQL database rather than an on-premesis SQL database is scalability. Users can choose from many options of pricing model depending upon the utilization of their needs. Companies can start out with a low cost Azure SQL database having a fully managed database platform without the expense of an on-premises server and administrative costs and quickly scale up to a higher-cost pricing model with expanded system resources. Other major benefits are database high availability and low administrative duties with operational database administrator or Windows server administration duties [fa18-516-06-AzureSQL2].
+The biggest advantage to using an Azure SQL database rather than an on-premesis SQL database is scalability. Users can choose from many options of pricing model depending upon the utilization of their needs. Companies can start out with a low-cost Azure SQL database having a fully-managed database platform without the expense of an on-premises server and administrative costs and quickly scale up to a higher-cost pricing model with expanded system resources. Other major benefits are database up-time and low administrative duties with operational database administrator or Windows server administration duties [fa18-516-06-AzureSQL2].
 
 #### Pricing Models
 
@@ -37,27 +37,24 @@ Once the database has been created, we can use Microsoft Visual Studio as the de
 ![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/Azure_SQLDBConnect.JPG)
 
 
-### Azure MySQL, PostgreSQL, and MariaDB Databases
-
-Within the Azure ecosystem, it is possible to use three different open-source databases, MySQL, PostgreSQL, and MariaDB. Each of these are the cloud-based community versions of the databases. Much like Azure SQL, these have the benefits of using a cloud-based database service, for example scalability and uptime. These Azure relational database allow users to keep using their desired open-source database platforms in the Azure cloud environment [fa18-516-06-AzureOpenSourceDB].
+### Azure MySQL Database
 
 
-### Azure Cosmos DB
 
-The Azure Cosmos DB offers various multimodel, highly available databases for world-wide use. Cosmos DB supports many NoSQL data models including document, graph, key-value, and column-family models and is built on the "atom-record-sequence" data model which supports many APIs including MongoDB, Cassandra, Gremlin, and SQL [fa18-516-06-AzureCosmosDB1].
-
-Cosmos DB uses "turnkey global distribution" by distributing data near to where the current users are located to enable low network latency. This is done through the "multi-homing APIs" where an application is aware of the location of the application user and can move data to the closest Azure region [fa18-516-06-AzureCosmosDB1].
-
-Cosmos DB service has high availability and throughput service level agreements, including a 99.999% availability and IO reads of less than 10 ms and IO writes of under 15 ms [fa18-516-06-AzureCosmosDB2]. Users needing a highly available NoSQL database at a global scale, such as global web application databases, could gain from using Cosmos DB.
-
-
-### Azure SQL Data Warehouse
+### Azure PostgreSQL Database ??
 
 
 
 
+### Cosmos DB
+    
+    
+    
     
 ## Analytics
+
+### Azure SQL Data Warehouse
+        
         
 ### Azure HDInsight (Kafka)
         
