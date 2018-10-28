@@ -69,6 +69,8 @@ Another strength is the ability to only use this service during a particular tim
 ## Analytics
         
 ### Azure HDInsight (Kafka)
+
+
         
         
         
