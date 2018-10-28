@@ -4,6 +4,7 @@ owner:
   lastname: "Filliman"
   hid: "fa18-516-06"
   community: "e516"
+  semester: "fa18"
 section:
     - title: Azure Data Factory
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureDataFactory.md 
