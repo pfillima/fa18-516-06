@@ -74,11 +74,17 @@ HDInsight is the Azure services for clustering Apache Hadoop, Apache Spark, Kafk
 
 Azure HDInsight services are typically used when working with massive amounts of data in the internet of things and streaming real-time analytics scenarios. There are many ways under the HDInsight umbrella to setup clusters according to business needs. The following show  for example configuring clusters using Apache Spark for parallel processing or Apache Storm for use with real-time streaming analytics. Apache HBase can be clustered in Azure for businesses needing a NoSQL database to store unstructured or semi-structured data. HBase brings very large tables having billions of rows and millions of columns. Apache Kafka can also be clustered under Azure HDInsight. Apache Kafka is a popular platform for streaming pipelines [fa18-516-06-Azure_HDInsightClustering].
 
+The following figure show HDInsight within a modern data warehouse.
+
+![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/Azure_HDInsightDW.png)
+
+
+
+
+
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
 
 
-
-        
 ### Azure Machine Learning
 
 
