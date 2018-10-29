@@ -70,9 +70,11 @@ Another strength is the ability to only use this service during a particular tim
         
 ### Azure HDInsight
 
-HDInsight is the Azure services for Apache Hadoop, Apache Spark, Kafka, Apache HBase, Hive, and Storm and are built around the Hortonworks Data Platform. The center of these services is the Apache Hadoop service made up of the Map Reduce framework and the Hadoop Distributed File System. These services are available in Azure without the stress of implementing these clusters in on-premesis servers and have seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
+HDInsight is the Azure services for clustering Apache Hadoop, Apache Spark, Kafka, Apache HBase, Hive, and Storm and are built around the Hortonworks Data Platform. The concepts of the Hadoop ecosystem go beyond the scope of this chapter, but this section is an overview of the different HDInsight services available and how they can be used within Azure.
 
-Azure HDInsight Hadoop services come from the Hortonworks Data Platform and are typically used when working with massive amounts of data in the internet of things and streaming real-time analytics scenarios. There are many ways under the HDInsight umbrella to setup clusters according to business needs, for example 
+One the of the strengths of HDInsight is that these services are available in Azure without the stress of implementing these clusters in on-premesis servers and have seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
+
+Azure HDInsight services are typically used when working with massive amounts of data in the internet of things and streaming real-time analytics scenarios. There are many ways under the HDInsight umbrella to setup clusters according to business needs, for example configuring clusters using Apache Spark for parallel processing or Apache Storm for use with real-time streaming analytics.  
 
 
 
