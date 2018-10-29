@@ -65,7 +65,6 @@ One of strengths of Azure SQL Data Warehouse is its ability to ingest modern dat
 Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time. Much like Azure SQL Database described above, this has high-avilability and backup and recoverability features as well [fa18-516-06-AzureSQLDataWarehouse1].
 
 
-    
 ## Analytics
         
 ### Azure HDInsight
@@ -74,13 +73,13 @@ HDInsight is the Azure services for clustering Apache Hadoop, Apache Spark, Kafk
 
 Azure HDInsight services are typically used when working with massive amounts of data in the internet of things and streaming real-time analytics scenarios. There are many ways under the HDInsight umbrella to setup clusters according to business needs. The following show  for example configuring clusters using Apache Spark for parallel processing or Apache Storm for use with real-time streaming analytics. Apache HBase can be clustered in Azure for businesses needing a NoSQL database to store unstructured or semi-structured data. HBase brings very large tables having billions of rows and millions of columns. Apache Kafka can also be clustered under Azure HDInsight. Apache Kafka is a popular platform for streaming pipelines [fa18-516-06-Azure_HDInsightClustering].
 
-The following figure show HDInsight within a modern data warehouse.
+The following figure shows HDInsight within a modern data warehouse. There are multiple data sources from log files, and structured and unstructured data as batch processes for the HDInsight data sources. These data are into Azure Storage or Azure Data Lake Stores. Spark and HiveQL can then be used to query the Azure storage and these can be used to build business intelligence data models, for example Azure Analysis Services models. Finally, these data can be visualized using PowerBI.
 
 ![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/Azure_HDInsightDW.png)
 
+The next figure shows Azure HDInsight in an Internet of Things scenario. Various IoT streams can be fed into IoT hubs then read into HDInsight using the Storm, Kafka, or Spark services, then real-time visualizations or applications can be fed data from HDInsight.
 
-
-
+![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/Azure_HDInsightIoT.png)
 
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
 
