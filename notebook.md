@@ -9,3 +9,18 @@ You will add to your notebook in bullet form for each week what you have done. P
 
 Proposed creating a chapter on Azure data services.
 
+# Week Fri 09/21/18 - 09/28/18
+
+Worked on Sections
+
+# Week Fri 10/05/18 - 10/12/18
+
+Worked on Sections
+
+# Week Fri 10/12/18 - 10/19/18
+
+Worked on Chapter
+
+# Week Fri 10/19/18 - 10/26/18
+
+Worked on Chapter
