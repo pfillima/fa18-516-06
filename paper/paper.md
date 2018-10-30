@@ -89,7 +89,7 @@ The Azure Stream Analytics service processes output from various IoT sources and
 
 Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the Azure Iot Hub as well as Azure Event Hubs, Blob storage, and other relational or non-relational data sources. Once ingested into Azure Stream Analytics, real-time analytics can be gained using machine learning algorithms, for example detecting a fraudulent bank transaction. The data output from Azure Stream Analytics can also be loaded into other and uses is a part of the Iot.
 
-![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/images/Azure_StreamAnalytics.png)
+![alt text](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/images/stream_analytics_intro_pipeline.png)
 
 There are three basic parts to using Azure Stream Analytics. The first part is creating a stream job which designates the data source and uses a query language similar to SQL to make any transaformations on the incoming data. The third step is specifying where to output the data. 
 
