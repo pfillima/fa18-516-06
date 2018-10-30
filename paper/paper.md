@@ -83,11 +83,14 @@ The next figure shows Azure HDInsight in an Internet of Things scenario. Various
 
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
 
-
-### Azure Machine Learning
-
-
 ### Azure Stream Analytics
+
+The Azure Stream Analytics service processes output from various IoT sources and can be used to analyze real-time data. Real-time data analytics is needed when data is in movement, for example, in cases such as detecting fraudlent bank transactions before the account is deducted. In past analytic systems, where an ETL load happened once per day, this system could not detect this transaction in real-time. Azure Stream Analytics is the service that manages these continuous real-time output.
+
+
+
+
+
 
 
 
@@ -128,8 +131,5 @@ An activity within Data Factory is either a copy utility or a data transformatio
 ### Azure Analysis Services
         
         
-        
-### PowerBI
-
 
 
