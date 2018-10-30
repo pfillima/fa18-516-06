@@ -93,6 +93,7 @@ Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the
 
 There are three basic parts to using Azure Stream Analytics. The first part is creating a stream job which designates the data source and uses a query language similar to SQL to make any transaformations on the incoming data. The third step is specifying where to output the data. 
 
+
 ### Azure Data Lake Store
         
         
