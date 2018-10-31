@@ -95,7 +95,8 @@ There are three basic parts to using Azure Stream Analytics. The first part is c
 
 
 ### Azure Data Lake Store
-        
+
+
         
         
 ### Azure Data Lake Analytics
