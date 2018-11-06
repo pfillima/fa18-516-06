@@ -3,16 +3,14 @@
 | Paul Filliman
 | pfillima@iu.edu
 | Indiana University
-| hid: fa18-516-06 fa18-516-001
+| hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/paper/paper.md)
 
 :o: format incorrect
 
 
 ---
-
 Keywords: Azure
-
 ---
 
 ## Abstract
