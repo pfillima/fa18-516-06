@@ -1,9 +1,21 @@
 # Azure Data Services :hand: fa18-516-06
 
+| Paul Filliman
+| pfillima@iu.edu
+| Indiana University
+| hid: fa18-516-06 fa18-516-001
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/paper/paper.md)
+
 :o: format incorrect
 
-github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/edit/master/paper/paper.md)
 
+---
+
+Keywords: Azure
+
+---
+
+## Abstract
 
 This chapter focuses on an overview of the many data services within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
 
