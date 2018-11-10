@@ -41,11 +41,11 @@ The creation of an Azure SQL database is very easy:
 2. From the Azure portal, select "Create a Resource", then choose "SQL Database" within "Databases"
 3. Enter the name of the database to create
 4. Enter the container for the resource group, create a new resource group, if desired
-5. Choose if this created database will use an elastic pool
+5. Choose if this created database will use an elastic poolcode-example
 6. Select the pricing model
 7. Click the "Create" button
 
-![alt text](images/Azure_CreateSQLDatabase.JPG)
+![Figure1](images/Azure_CreateSQLDatabase.JPG){#fig: CreateAzureSQLDatabase width=4in}
 
 Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown below.
 
