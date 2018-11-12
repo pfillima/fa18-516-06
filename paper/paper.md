@@ -10,7 +10,9 @@
 
 
 ---
+
 Keywords: Azure
+
 ---
 
 ## Abstract
@@ -127,6 +129,7 @@ There are three basic parts to using Azure Stream Analytics. The first part is c
 Azure Data Factory is the integration engine within Microsoft Azure. This data service is responsible for automated movement of both structured and unstructured data within Azure and on-premisis data repositories. This work is accomplished by source and target connections together with pipelines between those connections and activities. Azure Data Factory can run in typical data warehouse environments as an extract transform and load workflow using the Azure-SSIS runtime as well as with big data workflows using unstructured data Azure HDInsight or Azure Data Lake.
 
 #### Pipelines 
+
 A pipeline is a task within a data factory that comprises activities. For example, a pipeline can be used as a copy task or a data transformation task. Pipelines can be scheduled as a one-time event, hourly, daily, etc.
 
 
