@@ -6,8 +6,6 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
-:o: see the sample in epub for how to do images.
-
 
 ---
 
@@ -47,11 +45,11 @@ The creation of an Azure SQL database is very easy:
 6. Select the pricing model
 7. Click the "Create" button
 
-![Figure1](images/Azure_CreateSQLDatabase.JPG){#fig: Create Azure SQL Database width=3in}
+![:o: CAPTION MISSING](images/Azure_CreateSQLDatabase.JPG){#fig:create-azure-sql}
 
-Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown below.
+Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:azure-sql.
 
-![alt text](images/Azure_SQLDBConnect.JPG)
+![:o: CAPTION MISSING](images/Azure_SQLDBConnect.JPG){#fig:azure-sql}
 
 
 ### Azure MySQL, PostgreSQL, and MariaDB Databases
