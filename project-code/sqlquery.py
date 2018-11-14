@@ -1,6 +1,4 @@
-  GNU nano 2.9.3                              sqlquery.py                                         
-
-#1flask/bin/python
+#!flask/bin/python
 import pyodbc
 from flask import Flask, request, jsonify
 from flask_restful import fields
