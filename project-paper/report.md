@@ -5,6 +5,7 @@
 
 
 ## Abstract
+This project uses a REST service together with a sample Microsoft Azure SQL Database.
 
 
 ## Introduction
