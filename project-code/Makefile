@@ -1,17 +1,36 @@
-define terminal
-	osascript -e 'tell application "Terminal" to do script "cd $(PWD); $1"'
-endef
-
 install:
 	pip install -r requirements.txt
+	sudo apt-get install -r installs.txt
 
 
-demo:
-	$(call terminal, python server.py)
+createtable:
+	python CreateTable.py
 	sleep 3
 	@echo "==============================================================================="
 	@echo "Get the info"
 	@echo "==============================================================================="
-	curl http://localhost/cloudmesh/cpu
+	curl http://localhost:5000/
+	@echo
+	@echo "==============================================================================="
+
+
+checktable:
+	python CheckTable.py
+	sleep 3
+	@echo "==============================================================================="
+	@echo "Get the info"
+	@echo "==============================================================================="
+	curl http://localhost:5000/
+	@echo
+	@echo "==============================================================================="
+
+
+get_apiweather:
+	python get_apiweather.py
+	sleep 3
+	@echo "==============================================================================="
+	@echo "Get the info"
+	@echo "==============================================================================="
+	curl http://localhost:5000/
 	@echo
 	@echo "==============================================================================="
