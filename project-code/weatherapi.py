@@ -1,12 +1,12 @@
 #!flask/bin/python
 import pyodbc
 import requests
-from flask import Flask, request, jsonify
-from flask_restful import fields
 import json
 import config
 import datetime
 import urllib.request
+from flask import Flask, request, jsonify
+from flask_restful import fields
 
 app = Flask(__name__)
 
