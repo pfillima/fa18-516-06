@@ -111,6 +111,11 @@ There are three basic parts to using Azure Stream Analytics. The first part is c
 
 ### Azure Data Lake Store
 
+Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System compliant file system for use with big data analytics. The latest release of Azure Data Lake, Gen2, is multimodal in that there is both BLOB object storage and file system storage. With the first edition, there was only BLOB storage.
+
+
+
+
 
         
         
