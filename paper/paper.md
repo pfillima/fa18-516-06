@@ -111,7 +111,12 @@ There are three basic parts to using Azure Stream Analytics. The first part is c
 
 ### Azure Data Lake Store
 
-Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System compliant file system for use with big data analytics. The latest release of Azure Data Lake, Gen2, is multimodal in that there is both BLOB object storage and file system storage. With the first edition, there was only BLOB storage.
+Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System (HDFS) -compliant file system for use with big data analytics. Azure Data Lake is a cost-effective way to store scalable unstructured data in secure, active-directory environment.
+
+The latest release of Azure Data Lake in June, 2018, named Gen2, is multimodal in that there is both BLOB object storage and now file system storage.
+
+
+
 
 
 
@@ -150,8 +155,3 @@ An activity within Data Factory is either a copy utility or a data transformatio
         
         
         
-### Azure Analysis Services
-        
-        
-
-
