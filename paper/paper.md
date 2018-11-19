@@ -15,7 +15,7 @@ Keywords: Azure
 
 ## Abstract
 
-This chapter focuses on an overview of the many data services within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
+This chapter focuses on an overview of the many data services highlights within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
 
 ## Database Products
 
@@ -76,7 +76,7 @@ The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive 
 
 One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse [fa18-516-06-AzureSQLDataWarehouse2]. Various Azure services can be used having the Azure SQL Data Warehouse as a source, including Azure Analysis Services, other Azure SQL Data Warehouses, and Azure SQL Databases.
 
-![:o: CAPTION MISSING LABEL MISSING [@fa18-516-06-AzureSQLDataWarehouse3] ](images/Azure_SQLDW1.jpg)
+![[@fa18-516-06-AzureSQLDataWarehouse3]](images/Azure_SQLDW1.jpg)
 
 
 
@@ -121,12 +121,7 @@ The latest release of Azure Data Lake in June, 2018, named Gen2, is multimodal i
 
 Together with Azure Data Lake is Azure Data Lake Analytics. This service provides methods for running analytics job at a pay per use cost. The creation of data lake analytics jobs can be done using Visual Studio and U-SQL to load and transform data. Azure data lake analytics can also be used with data sources from Azure SQL Database, Azure Storage, and Azure SQL Data Warehouse, as well as the Azure Data Lake Store.
 
-
-        
-### Azure Data Catalog
-        
-        
-        
+      
 ### Azure Data Factory
 
 Azure Data Factory is the integration engine within Microsoft Azure. This data service is responsible for automated movement of both structured and unstructured data within Azure and on-premisis data repositories. This work is accomplished by source and target connections together with pipelines between those connections and activities. Azure Data Factory can run in typical data warehouse environments as an extract transform and load workflow using the Azure-SSIS runtime as well as with big data workflows using unstructured data Azure HDInsight or Azure Data Lake.
