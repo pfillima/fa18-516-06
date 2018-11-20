@@ -1,0 +1,53 @@
+swagger: "2.0"
+info: 
+  version: "0.0.1"
+  title: "cpuinfo"
+  description: "A simple service to get cpuinfo as an example of using swagger-2.0 specification and codegen"
+  termsOfService: "http://swagger.io/terms/"
+  contact: 
+    name: "Cloudmesh REST Service Example"
+  license: 
+    name: "Apache"
+host: "localhost:5000"
+basePath: "/weather"
+schemes: 
+  - "http"
+consumes: 
+  - "application/json"
+produces: 
+  - "application/json"
+paths: 
+  /weather:
+    get:
+      tags:
+        - Weather
+      operationId: weatherapi.get_weather
+      description: "Returns current weather data from openweathermap.org"
+      produces: 
+        - "application/json"
+      responses: 
+        "200":
+          description: "Current weather data"
+          schema: 
+            $ref: "#/definitions/weather"
+    post:
+      tags:
+        - Weather
+      operationId: weatherapi.put_database
+      description: "Inserts weather data into MongoDB or Azure SQL database"
+      produces:
+        - "application/json"
+      responses:
+        "200":
+          description: "Inserted into database"
+          schema:
+            $ref: "#/definitions/weather"
+definitions:
+  weather:
+    type: "object"
+    required: 
+      - "model"
+    properties: 
+      model:
+        type: "string"
+
