@@ -131,28 +131,15 @@ def insertMongoDB():
     '''
 
     try:
-        print("1")
-
         client = pymongo.MongoClient("mongodb://127.0.0.1:27017")
-
-
-        print("1.5")
-
         db = client['cm']
 
-        print("2")
-
         profiles = db['profile']
-
-        print("3")
 
         profile = {"author": "Paul",
                 "text": "entry",
                 "tags": ["profile"],
                 "date": datetime.datetime.utcnow()}
-
-        print("4")
-
 
         #weather = db['weatherres']
 
@@ -166,7 +153,6 @@ def insertMongoDB():
         #client = MongoClient()
         #db = client.admin
 
-        print("5")
 
         # Issue the serverStatus command and print the results
         #serverStatusResult = db.command("serverStatus")
