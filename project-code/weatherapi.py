@@ -15,7 +15,7 @@ app = Flask(__name__)
 server = 'pfillimansql.database.windows.net'
 database = 'AdvWorksLT'
 username = 'sqladmin@pfillimansql'
-password = XXXXXXXXX
+password = 'SqlDba123'
 driver = '{ODBC Driver 13 for SQL Server}'
 ##################################################
 

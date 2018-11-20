@@ -1,2 +1,4 @@
 flask
-connexion
+flask_restful
+requests
+
