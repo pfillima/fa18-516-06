@@ -1,10 +1,9 @@
 install:
 	pip install -r requirements.txt
-	sudo apt-get install -r installs.txt
+	cat packages.txt | xargs sudo apt-get install
 
-
-createtable:
-	python CreateTable.py
+server:
+	python server.py
 	sleep 3
 	@echo "==============================================================================="
 	@echo "Get the info"
@@ -14,8 +13,8 @@ createtable:
 	@echo "==============================================================================="
 
 
-checktable:
-	python CheckTable.py
+getapi:
+	python weatherapi.py
 	sleep 3
 	@echo "==============================================================================="
 	@echo "Get the info"
@@ -25,12 +24,3 @@ checktable:
 	@echo "==============================================================================="
 
 
-get_apiweather:
-	python get_apiweather.py
-	sleep 3
-	@echo "==============================================================================="
-	@echo "Get the info"
-	@echo "==============================================================================="
-	curl http://localhost:5000/
-	@echo
-	@echo "==============================================================================="
