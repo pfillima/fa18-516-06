@@ -7,7 +7,7 @@ owner:
   semester: "fa18"
 section:
     - title: Azure Data Factory
-      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureDataFactory.md 
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureEventHubs.md
     - title: Azure IoT
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureIoT.md
     - title: Cloud Computing Using Visual Studio
