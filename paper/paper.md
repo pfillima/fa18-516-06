@@ -15,7 +15,7 @@ Keywords: Azure
 
 ## Abstract
 
-This chapter focuses on an overview of the many data services within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
+This chapter focuses on an overview of the many data services highlights within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
 
 ## Database Products
 
@@ -45,11 +45,15 @@ The creation of an Azure SQL database is very easy:
 6. Select the pricing model
 7. Click the "Create" button
 
-![:o: CAPTION MISSING](images/Azure_CreateSQLDatabase.JPG){#fig:create-azure-sql}
+![:0: Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG)
+
+{#fig:create-azure-sql}
 
 Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:azure-sql.
 
-![:o: CAPTION MISSING](images/Azure_SQLDBConnect.JPG){#fig:azure-sql}
+![:o: Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG)
+
+{#fig:azure-sql}
 
 
 ### Azure MySQL, PostgreSQL, and MariaDB Databases
@@ -72,7 +76,7 @@ The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive 
 
 One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse [fa18-516-06-AzureSQLDataWarehouse2]. Various Azure services can be used having the Azure SQL Data Warehouse as a source, including Azure Analysis Services, other Azure SQL Data Warehouses, and Azure SQL Databases.
 
-![:o: CAPTION MISSING LABEL MISSING [@fa18-516-06-AzureSQLDataWarehouse3] ](images/Azure_SQLDW1.jpg)
+![[@fa18-516-06-AzureSQLDataWarehouse3]](images/Azure_SQLDW1.jpg)
 
 
 
@@ -109,19 +113,15 @@ Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the
 There are three basic parts to using Azure Stream Analytics. The first part is creating a stream job which designates the data source and uses a query language similar to SQL to make any transaformations on the incoming data. The third step is specifying where to output the data. 
 
 
-### Azure Data Lake Store
+### Azure Data Lake Store and Data Lake Analytics
 
+Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System (HDFS) -compliant file system for use with big data analytics. Azure Data Lake is a cost-effective way to store scalable unstructured data in secure, active-directory environment fa18-516-06-ADLS1.
 
-        
-        
-### Azure Data Lake Analytics
-        
-        
-        
-### Azure Data Catalog
-        
-        
-        
+The latest release of Azure Data Lake in June, 2018, named Gen2, is multimodal in that there is both BLOB object storage and now file system storage. This version has a Hadoop file system with hierarchical directories which allows for higher performance than a flat object namespace. This new feature in Gen2 can eliminate unneeded REST service calls, for example in moving files. Instead of separate REST service calls for copying a file to a new location and another for deleting the file from its original location, with Gen2 this process can be done in a single operation using file system storage [fa18-516-06-ADLS2].
+
+Together with Azure Data Lake is Azure Data Lake Analytics. This service provides methods for running analytics job at a pay per use cost. The creation of data lake analytics jobs can be done using Visual Studio and U-SQL to load and transform data. Azure data lake analytics can also be used with data sources from Azure SQL Database, Azure Storage, and Azure SQL Data Warehouse, as well as the Azure Data Lake Store [fa18-516-06-ADLS3].
+
+      
 ### Azure Data Factory
 
 Azure Data Factory is the integration engine within Microsoft Azure. This data service is responsible for automated movement of both structured and unstructured data within Azure and on-premisis data repositories. This work is accomplished by source and target connections together with pipelines between those connections and activities. Azure Data Factory can run in typical data warehouse environments as an extract transform and load workflow using the Azure-SSIS runtime as well as with big data workflows using unstructured data Azure HDInsight or Azure Data Lake.
@@ -134,19 +134,7 @@ A pipeline is a task within a data factory that comprises activities. For exampl
 #### Activities
 
 An activity within Data Factory is either a copy utility or a data transformation utility. A data copy utility has numerous sources and targets which can move data between cloud and on-premisis relational and NoSQL databases. A data transformation utility can manipulate the data from the previously mentioned data stores using Data Lake U-SQL queries, an HDInsight Hive or Pig activities.
-        
-        
-        
-### Azure Databricks
-        
-        
-        
-### Azure Blob Storage
-        
-        
-        
-### Azure Analysis Services
-        
-        
 
 
+
+        
