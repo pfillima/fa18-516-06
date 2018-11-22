@@ -1,4 +1,4 @@
-# Azure Data Services :hand: fa18-516-06
+# Azure Data Services :wave: :exclamation: fa18-516-06
 
 | Paul Filliman
 | pfillima@iu.edu
@@ -6,6 +6,9 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
+:o: citations
+
+:o: quotes are for quotes only and must also use `>` otherwise use *italic*
 
 ---
 
