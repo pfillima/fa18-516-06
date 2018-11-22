@@ -8,6 +8,8 @@
 
 :o: citations
 
+:o: quotes are for quotes only and must also use `>` otherwise use *italic*
+
 ---
 
 Keywords: Azure
