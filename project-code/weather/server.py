@@ -2,24 +2,27 @@
 Main module of the server file
 """
 
-from flask import jsonify
+from flask import Flask, render_template, jsonify
 import connexion
-
+import six
 
 # Create the application instance
-app = connexion.App(__name__, specification_dir="./")
+#app = Flask(__name__, template_folder = "template")
+
+app = connexion.App(__name__, specification_dir = "./")
+app.add_api("swagger.yaml")
 
 # Read the yaml file to configure the endpoints
-app.add_api("cpu.yaml")
+#app.add_api("cpu.yaml")
 
 # create a URL route in our application for "/"
-@app.route("/")
+@app.route("/weatherapi")
 def home():
-    msg = {"msg": "It's working!"}
-    return jsonify(msg)
+    return render_template("home.html")
+
 
 def main():
-    app.run(port=8080, debug=True)
+    app.run(host = "0.0.0.0", port = 5000, debug=True)
 
 if __name__ == "__main__":
     main()

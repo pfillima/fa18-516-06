@@ -165,7 +165,7 @@ def insertMongoDB():
         return 1
 
 
-@app.route("/weather/get", methods=["GET"])
+@app.route("/weatherapi/result", methods=["GET"])
 def get_weather():
 
     try:
@@ -174,7 +174,7 @@ def get_weather():
         url = buildOpenWeatherMapAPIRequest(openweatherkey, city)
         jsondata = getAPIData(url)
 
-        insertMongoDB()
+        #insertMongoDB()
 
         return jsonify(jsondata)
 
@@ -182,7 +182,7 @@ def get_weather():
         return "ERR"
 
 
-@app.route("/weather/put", methods=["PUT"])
+@app.route("/weatherapi/result", methods=["POST"])
 def put_database():
     try:
         if (dbserv == "mongo"):
