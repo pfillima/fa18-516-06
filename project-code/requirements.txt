@@ -5,4 +5,5 @@ requests
 pyodbc
 mongoengine
 pymongo
+json_utils
 

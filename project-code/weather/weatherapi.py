@@ -10,6 +10,7 @@ import models
 import pymongo
 from flask import Flask, request, jsonify
 from flask_restful import fields
+from bson import json_util
 
 app = Flask(__name__)
 
@@ -20,6 +21,8 @@ database = 'AdvWorksLT'
 username = 'sqladmin@pfillimansql'
 password = 'SqlDba123'
 driver = '{ODBC Driver 13 for SQL Server}'
+mongouid = 'mongoadmin'
+mongopwd = 'MongoAdmin123'
 ##################################################
 
 
@@ -116,85 +119,46 @@ def insertAzureTable(connstr, jsondata):
     cursor.close()
 
 
-def insertMongoDB():
-    #try:
-    #from pymongo import MongoClient
+def insertMongoDB(jsondata):
+    connstr = "mongodb://"+mongouid+":"+mongopwd+"@pfmongodbcluster0-shard-00-00-16fyb.mongodb.net:27017, " \
+              "pfmongodbcluster0-shard-00-01-16fyb.mongodb.net:27017," \
+              "pfmongodbcluster0-shard-00-02-16fyb.mongodb.net:27017/" \
+              "test?ssl=true&replicaSet=PFMongoDBCluster0-shard-0&authSource=admin&retryWrites=true"
 
-    # pprint library is used to make the output look more pretty
-    #from pprint import pprint
+    # create the connection to MongoDB and insert the json weather data
+    conn = pymongo.MongoClient(connstr)
 
-    #print("1")
+    db = conn.WeatherDB
+    weathercol = db.WeatherCollection
 
+    weatherclean = json.loads(json_util.dumps(jsondata))
+    weathercol.insert_one(weatherclean)
 
-    '''
-    "mongodb://mongoadmin:MongoAdmin123@pfmongodbcluster0-shard-00-00-16fyb.mongodb.net:27017," \
-                "pfmongodbcluster0-shard-00-01-16fyb.mongodb.net:27017," \
-                "pfmongodbcluster0-shard-00-02-16fyb.mongodb.net:27017/" \
-                "test?ssl=true&replicaSet=PFMongoDBCluster0-shard-0&authSource=admin&retryWrites=true"
-    '''
-
-    try:
-        client = pymongo.MongoClient("mongodb://127.0.0.1:27017")
-        db = client['cm']
-
-        profiles = db['profile']
-
-        profile = {"author": "Paul",
-                "text": "entry",
-                "tags": ["profile"],
-                "date": datetime.datetime.utcnow()}
-
-        #weather = db['weatherres']
-
-        #weather = models.weather
-
-
-        #weather = 
-
-        #client = MongoClient(connstr)
-
-        #client = MongoClient()
-        #db = client.admin
-
-
-        # Issue the serverStatus command and print the results
-        #serverStatusResult = db.command("serverStatus")
-        #print(serverStatusResult)
-
-
-        return 0
-
-    except:
-        return 1
-
+    conn.close()
 
 
 @app.route("/weather", methods=["GET"])
 def get_weather():
-    try:
-        # grab weather info from openweatherapi
-        openweatherkey = "338f5c207f400c983df8f00e1ce658ac"
-        city = "Indianapolis,US"
-        url = buildOpenWeatherMapAPIRequest(openweatherkey, city)
-        jsondata = getAPIData(url)
+    # grab weather info from openweatherapi
+    openweatherkey = "338f5c207f400c983df8f00e1ce658ac"
+    city = "Indianapolis,US"
+    url = buildOpenWeatherMapAPIRequest(openweatherkey, city)
+    jsondata = getAPIData(url)
 
-        # get dbname from api parameter
-        dbname = request.args.get('dbname')
+    # get dbname from api parameter
+    dbname = request.args.get('dbname')
 
-        if (dbname == 'azuresql'):
-            connstr = 'DRIVER={driver};PORT=1433;SERVER={server};DATABASE={database};UID={username};PWD={password}'.format(driver=driver,server=server,database=database,username=username,password=password)
+    if (dbname == 'azuresql'):
+        connstr = 'DRIVER={driver};PORT=1433;SERVER={server};DATABASE={database};UID={username};PWD={password}'.format(driver=driver,server=server,database=database,username=username,password=password)
+        insertAzureTable(connstr, jsondata)
 
-            insertAzureTable(connstr, jsondata)
-        elif (dbname == 'mongodb'):
-            insertMongoDB()
-        else:
-            print("OK")
+    elif (dbname == 'mongodb'):
+        insertMongoDB(jsondata)
 
-        return jsonify(jsondata)
+    else:
+        print("Please use 'azuresql' or 'mongodb'")
 
-    except:
-        return "ERR"
-
+    return jsonify(jsondata)
 
 
 if __name__ == '__main__':
