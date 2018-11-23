@@ -68,7 +68,7 @@ Within the Azure ecosystem, it is possible to use three different open-source da
 
 The Azure Cosmos DB offers various multimodel, highly available databases for world-wide use. Cosmos DB supports many NoSQL data models including document, graph, key-value, and column-family models and is built on the *atom-record-sequence* data model which supports many APIs including MongoDB, Cassandra, Gremlin, and SQL [fa18-516-06-AzureCosmosDB1].
 
-Cosmos DB uses *turnkey global distribution* by distributing data near to where the current users are located to enable low network latency. This is done through the *multi-homing APIs* where an application is aware of the location of the application user and can move data to the closest Azure region [fa18-516-06-AzureCosmosDB1].
+Cosmos DB uses *turnkey global distribution* by distributing data near to where the current users are located to enable low network latency [fa18-516-06-AzureCosmosDB1]. This is done through the *multi-homing APIs* where an application is aware of the location of the application user and can move data to the closest Azure region.
 
 Cosmos DB service has high availability and throughput service level agreements, including a 99.999% availability and IO reads of less than 10 ms and IO writes of under 15 ms [fa18-516-06-AzureCosmosDB2]. Users needing a highly available NoSQL database at a global scale, such as global web application databases, could gain from using Cosmos DB.
 
@@ -127,12 +127,7 @@ Together with Azure Data Lake is Azure Data Lake Analytics. This service provide
 
 Azure Data Factory is the integration engine within Microsoft Azure. This data service is responsible for automated movement of both structured and unstructured data within Azure and on-premisis data repositories. This work is accomplished by source and target connections together with pipelines between those connections and activities. Azure Data Factory can run in typical data warehouse environments as an extract transform and load workflow using the Azure-SSIS runtime as well as with big data workflows using unstructured data Azure HDInsight or Azure Data Lake.
 
-#### Pipelines 
-
 A pipeline is a task within a data factory that comprises activities. For example, a pipeline can be used as a copy task or a data transformation task. Pipelines can be scheduled as a one-time event, hourly, daily, etc.
-
-
-#### Activities
 
 An activity within Data Factory is either a copy utility or a data transformation utility. A data copy utility has numerous sources and targets which can move data between cloud and on-premisis relational and NoSQL databases. A data transformation utility can manipulate the data from the previously mentioned data stores using Data Lake U-SQL queries, an HDInsight Hive or Pig activities.
 
