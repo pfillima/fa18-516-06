@@ -1,0 +1,217 @@
+---
+swagger: "2.0"
+info:
+  description: "A simple service to get current weather data"
+  version: "0.0.1"
+  title: "Weather Service"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    name: "Cloudmesh REST Service Example"
+  license:
+    name: "Apache"
+host: "localhost:5000"
+basePath: "/weatherapi"
+schemes:
+- "http"
+consumes:
+- "application/json"
+produces:
+- "application/json"
+paths:
+  /result:
+    get:
+      tags:
+      - "Weather"
+      description: "Returns current weather data from openweathermap.org"
+      operationId: "weatherapi_get_weather"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          $ref: "#/definitions/200"
+      x-swagger-router-controller: "swagger_server.controllers.weather_controller"
+    post:
+      tags:
+      - "Weather"
+      description: "Inserts weather data into MongoDB or Azure SQL database"
+      operationId: "weatherapi_put_database"
+      produces:
+      - "application/json"
+      parameters: []
+      responses:
+        200:
+          description: "Inserted into database"
+          schema:
+            $ref: "#/definitions/200"
+      x-swagger-router-controller: "swagger_server.controllers.weather_controller"
+definitions:
+  200:
+    type: "object"
+    properties:
+      base:
+        type: "string"
+      clouds:
+        $ref: "#/definitions/Clouds"
+      cod:
+        type: "integer"
+        format: "int32"
+      coord:
+        $ref: "#/definitions/Coord"
+      dt:
+        type: "integer"
+        format: "int32"
+      id:
+        type: "integer"
+        format: "int32"
+      main:
+        $ref: "#/definitions/Main"
+      name:
+        type: "string"
+      sys:
+        $ref: "#/definitions/Sys"
+      visibility:
+        type: "integer"
+      weather:
+        type: "array"
+        items:
+          $ref: "#/definitions/Weather"
+      wind:
+        $ref: "#/definitions/Wind"
+    title: "Successful response"
+    example:
+      dt: 5
+      coord:
+        lon: 5.962133916683182377482808078639209270477294921875
+        lat: 1.46581298050294517310021547018550336360931396484375
+      visibility: 7
+      name: "name"
+      weather:
+      - icon: "icon"
+        description: "description"
+        main: "main"
+        id: 1
+      - icon: "icon"
+        description: "description"
+        main: "main"
+        id: 1
+      cod: 6
+      main:
+        temp: 3.61607674925191080461672754609026014804840087890625
+        temp_min: 4.1456080298839363962315474054776132106781005859375
+        humidity: 7
+        pressure: 9
+        temp_max: 2.027123023002321833274663731572218239307403564453125
+      clouds:
+        all: 0
+      id: 2
+      sys:
+        country: "country"
+        sunrise: 1
+        sunset: 1
+        id: 7
+        message: 1.231513536777255612975068288506008684635162353515625
+        type: 6
+      base: "base"
+      wind:
+        deg: 4
+        speed: 5.02500479152029466689555192715488374233245849609375
+  Clouds:
+    type: "object"
+    properties:
+      all:
+        type: "integer"
+        format: "int32"
+    title: "clouds"
+    example:
+      all: 0
+  Coord:
+    type: "object"
+    properties:
+      lat:
+        type: "number"
+      lon:
+        type: "number"
+    title: "Coord"
+    example:
+      lon: 5.962133916683182377482808078639209270477294921875
+      lat: 1.46581298050294517310021547018550336360931396484375
+  Weather:
+    type: "object"
+    properties:
+      description:
+        type: "string"
+      icon:
+        type: "string"
+      id:
+        type: "integer"
+        format: "int32"
+      main:
+        type: "string"
+    title: "weather"
+    example:
+      icon: "icon"
+      description: "description"
+      main: "main"
+      id: 1
+  Main:
+    type: "object"
+    properties:
+      humidity:
+        type: "integer"
+        format: "int32"
+      pressure:
+        type: "integer"
+        format: "int32"
+      temp:
+        type: "number"
+      temp_max:
+        type: "number"
+      temp_min:
+        type: "number"
+    title: "Main"
+    example:
+      temp: 3.61607674925191080461672754609026014804840087890625
+      temp_min: 4.1456080298839363962315474054776132106781005859375
+      humidity: 7
+      pressure: 9
+      temp_max: 2.027123023002321833274663731572218239307403564453125
+  Wind:
+    type: "object"
+    properties:
+      deg:
+        type: "integer"
+        format: "int32"
+      speed:
+        type: "number"
+    title: "wind"
+    example:
+      deg: 4
+      speed: 5.02500479152029466689555192715488374233245849609375
+  Sys:
+    type: "object"
+    properties:
+      country:
+        type: "string"
+      id:
+        type: "integer"
+        format: "int32"
+      message:
+        type: "number"
+      sunrise:
+        type: "integer"
+        format: "int32"
+      sunset:
+        type: "integer"
+        format: "int32"
+      type:
+        type: "integer"
+        format: "int32"
+    title: "Sys"
+    example:
+      country: "country"
+      sunrise: 1
+      sunset: 1
+      id: 7
+      message: 1.231513536777255612975068288506008684635162353515625
+      type: 6
