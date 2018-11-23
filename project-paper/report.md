@@ -17,7 +17,7 @@ This pro
 ## Architecture
 swagger, flask, openweathermap api, MongoDB Atlas, AZure SQL Database
 
-Image
+![ArchDiagram](images/FP1.JPG)
 
 ## Implementation
 1. install from requirements.txt
