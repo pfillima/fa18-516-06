@@ -41,20 +41,20 @@ There are two purchasing models. The Database Transaction Unit (DTU) based model
 The creation of an Azure SQL database is very easy:
 
 1. Log in to the Azure portal
-2. From the Azure portal, select "Create a Resource", then choose "SQL Database" within "Databases"
+2. From the Azure portal, select *Create a Resource*, then choose *SQL Database" within "Databases*
 3. Enter the name of the database to create
 4. Enter the container for the resource group, create a new resource group, if desired
 5. Choose if this created database will use an elastic poolcode-example
 6. Select the pricing model
-7. Click the "Create" button
+7. Click the *Create* button
 
-![:0: Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG)
+![Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG)
 
 {#fig:create-azure-sql}
 
 Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:azure-sql.
 
-![:o: Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG)
+![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG)
 
 {#fig:azure-sql}
 
@@ -66,9 +66,9 @@ Within the Azure ecosystem, it is possible to use three different open-source da
 
 ### Azure Cosmos DB
 
-The Azure Cosmos DB offers various multimodel, highly available databases for world-wide use. Cosmos DB supports many NoSQL data models including document, graph, key-value, and column-family models and is built on the "atom-record-sequence" data model which supports many APIs including MongoDB, Cassandra, Gremlin, and SQL [fa18-516-06-AzureCosmosDB1].
+The Azure Cosmos DB offers various multimodel, highly available databases for world-wide use. Cosmos DB supports many NoSQL data models including document, graph, key-value, and column-family models and is built on the *atom-record-sequence* data model which supports many APIs including MongoDB, Cassandra, Gremlin, and SQL [fa18-516-06-AzureCosmosDB1].
 
-Cosmos DB uses "turnkey global distribution" by distributing data near to where the current users are located to enable low network latency. This is done through the "multi-homing APIs" where an application is aware of the location of the application user and can move data to the closest Azure region [fa18-516-06-AzureCosmosDB1].
+Cosmos DB uses *turnkey global distribution* by distributing data near to where the current users are located to enable low network latency. This is done through the "multi-homing APIs" where an application is aware of the location of the application user and can move data to the closest Azure region [fa18-516-06-AzureCosmosDB1].
 
 Cosmos DB service has high availability and throughput service level agreements, including a 99.999% availability and IO reads of less than 10 ms and IO writes of under 15 ms [fa18-516-06-AzureCosmosDB2]. Users needing a highly available NoSQL database at a global scale, such as global web application databases, could gain from using Cosmos DB.
 
@@ -80,8 +80,6 @@ The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive 
 One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse [fa18-516-06-AzureSQLDataWarehouse2]. Various Azure services can be used having the Azure SQL Data Warehouse as a source, including Azure Analysis Services, other Azure SQL Data Warehouses, and Azure SQL Databases.
 
 ![[@fa18-516-06-AzureSQLDataWarehouse3]](images/Azure_SQLDW1.jpg)
-
-
 
 
 Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time. Much like Azure SQL Database described above, this has high-avilability and backup and recoverability features as well [fa18-516-06-AzureSQLDataWarehouse1].
@@ -97,11 +95,11 @@ Azure HDInsight services are typically used when working with massive amounts of
 
 The following figure shows HDInsight within a modern data warehouse. There are multiple data sources from log files, and structured and unstructured data as batch processes for the HDInsight data sources. These data are into Azure Storage or Azure Data Lake Stores. Spark and HiveQL can then be used to query the Azure storage and these can be used to build business intelligence data models, for example Azure Analysis Services models. Finally, these data can be visualized using PowerBI.
 
-![:o: CAPTION MISSING LABEL MISSING](images/Azure_HDInsightDW.png)
+![Modern Data Warehouse using HDInsight](images/Azure_HDInsightDW.png)
 
 The next figure shows Azure HDInsight in an Internet of Things scenario. Various IoT streams can be fed into IoT hubs then read into HDInsight using the Storm, Kafka, or Spark services, then real-time visualizations or applications can be fed data from HDInsight.
 
-![:o: CAPTION MISSING LABEL MISSING](images/Azure_HDInsightIoT.png)
+![HDInsight in an IoT scenario](images/Azure_HDInsightIoT.png)
 
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
 
@@ -111,14 +109,14 @@ The Azure Stream Analytics service processes output from various IoT sources and
 
 Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the Azure Iot Hub as well as Azure Event Hubs, Blob storage, and other relational or non-relational data sources. Once ingested into Azure Stream Analytics, real-time analytics can be gained using machine learning algorithms, for example detecting a fraudulent bank transaction. The data output from Azure Stream Analytics can also be loaded into other and uses is a part of the Iot.
 
-![:o: CAPTION MISSING LABEL MISSING](images/stream_analytics_intro_pipeline.png)
+![Azure Stream Analytics](images/stream_analytics_intro_pipeline.png)
 
 There are three basic parts to using Azure Stream Analytics. The first part is creating a stream job which designates the data source and uses a query language similar to SQL to make any transaformations on the incoming data. The third step is specifying where to output the data. 
 
 
 ### Azure Data Lake Store and Data Lake Analytics
 
-Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System (HDFS) -compliant file system for use with big data analytics. Azure Data Lake is a cost-effective way to store scalable unstructured data in secure, active-directory environment fa18-516-06-ADLS1.
+Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System (HDFS) -compliant file system for use with big data analytics. Azure Data Lake is a cost-effective way to store scalable unstructured data in secure, active-directory environment [fa18-516-06-ADLS1].
 
 The latest release of Azure Data Lake in June, 2018, named Gen2, is multimodal in that there is both BLOB object storage and now file system storage. This version has a Hadoop file system with hierarchical directories which allows for higher performance than a flat object namespace. This new feature in Gen2 can eliminate unneeded REST service calls, for example in moving files. Instead of separate REST service calls for copying a file to a new location and another for deleting the file from its original location, with Gen2 this process can be done in a single operation using file system storage [fa18-516-06-ADLS2].
 
