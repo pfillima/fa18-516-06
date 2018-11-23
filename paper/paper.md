@@ -1,4 +1,4 @@
-# Azure Data Services :wave: :exclamation: fa18-516-06
+# Azure Data Services fa18-516-06
 
 | Paul Filliman
 | pfillima@iu.edu
