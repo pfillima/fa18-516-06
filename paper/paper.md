@@ -6,10 +6,6 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
-:o: citations
-
-:o: quotes are for quotes only and must also use `>` otherwise use *italic*
-
 ---
 
 Keywords: Azure
