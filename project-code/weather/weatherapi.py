@@ -18,7 +18,7 @@ app = Flask(__name__)
 server = 'pfillimansql.database.windows.net'
 database = 'AdvWorksLT'
 username = 'sqladmin@pfillimansql'
-password = 'XXXXXXXX'
+password = 'SqlDba123'
 driver = '{ODBC Driver 13 for SQL Server}'
 ##################################################
 
@@ -47,8 +47,8 @@ def getAPIData(url):
 
 def createSQLTable(connstr):
     conn = pyodbc.connect(connstr)
-
-    sql_createtable = "IF NOT EXISTS ( SELECT 1 FROM sys.tables WHERE OBJECT_ID = OBJECT_ID('dbo.OpenWeatherAPI')) " \
+    sql_createtable = \
+            "IF NOT EXISTS ( SELECT 1 FROM sys.tables WHERE OBJECT_ID = OBJECT_ID('dbo.OpenWeatherAPI')) " \
             "CREATE TABLE dbo.OpenWeatherAPI ( " \
                  "ID int identity(1,1) primary key, " \
                  "Time datetime2(7), " \
@@ -74,8 +74,8 @@ def parseData(jsondata):
 
     # parse the json into variables
     result["Time"] = jsondata.get("dt")
-    result["Location"] = jsondata.get("name")
     result["Temperature"] = jsondata.get("main").get("temp")
+    result["Location"] = jsondata.get("name")
     result["Humidity"] = jsondata.get("main").get("humidity")
     result["Pressure"] = jsondata.get("main").get("pressure")
     result["Condition"] = jsondata["weather"][0]["main"]
@@ -98,11 +98,14 @@ def insertAzureTable(connstr, jsondata):
     Pressure = dict["Pressure"]
     Humidity = dict["Humidity"]
     WindSpeed = dict["WindSpeed"]
-    WindDegrees = dict["WindDegrees"]
+    WindDeg = dict["WindDeg"]
 
-    conn = pyodbc.connect(connstr)
+    # Create the Azure SQL table, if it does not exist
+    createSQLTable(connstr)
 
     # insert into table
+    conn = pyodbc.connect(connstr)
+
     sqlinsert = "INSERT INTO dbo.OpenWeatherAPI (Time, Location, Condition, ConditionDescription, Temperature, Pressure, Humidity, WindSpeed, WindDegrees) " \
                 "VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"
     values = [Time, Location, Condition, ConditionDesc, Temperature, Pressure, Humidity, WindSpeed, WindDeg]
@@ -165,40 +168,33 @@ def insertMongoDB():
         return 1
 
 
-@app.route("/weatherapi/result", methods=["GET"])
-def get_weather():
 
+@app.route("/weather", methods=["GET"])
+def get_weather():
     try:
+        # grab weather info from openweatherapi
         openweatherkey = "338f5c207f400c983df8f00e1ce658ac"
         city = "Indianapolis,US"
         url = buildOpenWeatherMapAPIRequest(openweatherkey, city)
         jsondata = getAPIData(url)
 
-        #insertMongoDB()
+        # get dbname from api parameter
+        dbname = request.args.get('dbname')
+
+        if (dbname == 'azuresql'):
+            connstr = 'DRIVER={driver};PORT=1433;SERVER={server};DATABASE={database};UID={username};PWD={password}'.format(driver=driver,server=server,database=database,username=username,password=password)
+
+            insertAzureTable(connstr, jsondata)
+        elif (dbname == 'mongodb'):
+            insertMongoDB()
+        else:
+            print("OK")
 
         return jsonify(jsondata)
 
     except:
         return "ERR"
 
-
-@app.route("/weatherapi/result", methods=["POST"])
-def put_database():
-    try:
-        if (dbserv == "mongo"):
-            insertMongoDB()
-
-        elif (dbserv == "azuresql"):
-            connstr = 'DRIVER={driver};PORT=1433;SERVER={server};DATABASE={database};UID={username};PWD={password}'.format(driver=driver,server=server,database=database,username=username,password=password)
-            createSQLTable(connstr)
-
-            # parse and insert into Azure SQL persistent storage
-            insertAzureTable(connstr, jsondata)
-
-        return "OK"
-
-    except:
-        return "ERR"
 
 
 if __name__ == '__main__':

@@ -4,7 +4,6 @@ Main module of the server file
 
 from flask import Flask, render_template, jsonify
 import connexion
-import six
 
 # Create the application instance
 #app = Flask(__name__, template_folder = "template")
@@ -16,13 +15,14 @@ app.add_api("swagger.yaml")
 #app.add_api("cpu.yaml")
 
 # create a URL route in our application for "/"
-@app.route("/weatherapi")
+@app.route("/weather")
 def home():
     return render_template("home.html")
 
 
 def main():
     app.run(host = "0.0.0.0", port = 5000, debug=True)
+
 
 if __name__ == "__main__":
     main()
