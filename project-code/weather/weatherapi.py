@@ -19,10 +19,10 @@ app = Flask(__name__)
 server = 'pfillimansql.database.windows.net'
 database = 'AdvWorksLT'
 username = 'sqladmin@pfillimansql'
-password = 'SqlDba123'
+password = 'XXXX'
 driver = '{ODBC Driver 13 for SQL Server}'
 mongouid = 'mongoadmin'
-mongopwd = 'MongoAdmin123'
+mongopwd = 'XXX'
 ##################################################
 
 
