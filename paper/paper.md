@@ -41,7 +41,7 @@ There are two purchasing models. The Database Transaction Unit (DTU) based model
 The creation of an Azure SQL database is very easy:
 
 1. Log in to the Azure portal
-2. From the Azure portal, select *Create a Resource*, then choose *SQL Database" within "Databases*
+2. From the Azure portal, select *Create a Resource*, then choose *SQL Database* within *Databases*
 3. Enter the name of the database to create
 4. Enter the container for the resource group, create a new resource group, if desired
 5. Choose if this created database will use an elastic poolcode-example
@@ -68,7 +68,7 @@ Within the Azure ecosystem, it is possible to use three different open-source da
 
 The Azure Cosmos DB offers various multimodel, highly available databases for world-wide use. Cosmos DB supports many NoSQL data models including document, graph, key-value, and column-family models and is built on the *atom-record-sequence* data model which supports many APIs including MongoDB, Cassandra, Gremlin, and SQL [fa18-516-06-AzureCosmosDB1].
 
-Cosmos DB uses *turnkey global distribution* by distributing data near to where the current users are located to enable low network latency. This is done through the "multi-homing APIs" where an application is aware of the location of the application user and can move data to the closest Azure region [fa18-516-06-AzureCosmosDB1].
+Cosmos DB uses *turnkey global distribution* by distributing data near to where the current users are located to enable low network latency. This is done through the *multi-homing APIs* where an application is aware of the location of the application user and can move data to the closest Azure region [fa18-516-06-AzureCosmosDB1].
 
 Cosmos DB service has high availability and throughput service level agreements, including a 99.999% availability and IO reads of less than 10 ms and IO writes of under 15 ms [fa18-516-06-AzureCosmosDB2]. Users needing a highly available NoSQL database at a global scale, such as global web application databases, could gain from using Cosmos DB.
 
