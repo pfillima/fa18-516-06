@@ -2,12 +2,10 @@
 import pyodbc
 import requests
 import json
-import config
 import datetime
 import urllib.request
-import mongoengine
-import models
 import pymongo
+import yaml
 from flask import Flask, request, jsonify
 from flask_restful import fields
 from bson import json_util
@@ -15,15 +13,21 @@ from bson import json_util
 app = Flask(__name__)
 
 
-##################################################
-server = 'pfillimansql.database.windows.net'
-database = 'AdvWorksLT'
-username = 'sqladmin@pfillimansql'
-password = 'SqlDba123'
-driver = '{ODBC Driver 13 for SQL Server}'
-mongouid = 'mongoadmin'
-mongopwd = 'MongoAdmin123'
-##################################################
+def getCredentials():
+    dict = {}
+    with open("../etc/cloudmesh-weather.yaml", 'r') as ymlfile:
+        cfg = yaml.load(ymlfile)
+
+    dict["azure_driver"] = cfg['cloudmesh']['cloud']['azure']['credentials']['AZURE_SQL_DRIVER']
+    dict["azure_dbserver"] = cfg['cloudmesh']['cloud']['azure']['credentials']['AZURE_SQLDATABASESERVER']
+    dict["azure_dbname"] = cfg['cloudmesh']['cloud']['azure']['credentials']['AZURE_DATABASENAME']
+    dict["azure_userid"] = cfg['cloudmesh']['cloud']['azure']['credentials']['AZURE_SQLSERVER_USERID']
+    dict["azure_passwd"] = cfg['cloudmesh']['cloud']['azure']['credentials']['AZURE_SECRET_KEY']
+    dict["mongodb_userid"] = cfg['cloudmesh']['data']['mongodb']['credentials']['MONGODB_USERID']
+    dict["mongodb_passwd"] = cfg['cloudmesh']['data']['mongodb']['credentials']['MONGODB_PASSWD']
+
+    return dict
+
 
 
 def buildOpenWeatherMapAPIRequest(apikey, cityname):
@@ -33,6 +37,7 @@ def buildOpenWeatherMapAPIRequest(apikey, cityname):
 def convertTime(tm):
     # convert time into SQL datetime format
     return datetime.datetime.fromtimestamp(int(tm)).strftime("%Y-%m-%d %H:%M:%S")
+
 
 def convertTemperature(temp):
     # convert degrees Kelvin to degrees Fahrenheit
@@ -119,12 +124,7 @@ def insertAzureTable(connstr, jsondata):
     cursor.close()
 
 
-def insertMongoDB(jsondata):
-    connstr = "mongodb://"+mongouid+":"+mongopwd+"@pfmongodbcluster0-shard-00-00-16fyb.mongodb.net:27017, " \
-              "pfmongodbcluster0-shard-00-01-16fyb.mongodb.net:27017," \
-              "pfmongodbcluster0-shard-00-02-16fyb.mongodb.net:27017/" \
-              "test?ssl=true&replicaSet=PFMongoDBCluster0-shard-0&authSource=admin&retryWrites=true"
-
+def insertMongoDB(connstr, jsondata):
     # create the connection to MongoDB and insert the json weather data
     conn = pymongo.MongoClient(connstr)
 
@@ -149,11 +149,28 @@ def get_weather():
     dbname = request.args.get('dbname')
 
     if (dbname == 'azuresql'):
-        connstr = 'DRIVER={driver};PORT=1433;SERVER={server};DATABASE={database};UID={username};PWD={password}'.format(driver=driver,server=server,database=database,username=username,password=password)
+        creds = getCredentials()
+        #print(creds["azure_driver"])
+
+        connstr = 'DRIVER={driver};PORT=1433;SERVER={server};DATABASE={database};UID={username};PWD={password}' \
+            .format(driver=creds["azure_driver"], \
+                server=creds["azure_dbserver"], \
+                database=creds["azure_dbname"], \
+                username=creds["azure_userid"], \
+                password=creds["azure_passwd"])
+
         insertAzureTable(connstr, jsondata)
 
     elif (dbname == 'mongodb'):
-        insertMongoDB(jsondata)
+        creds = getCredentials()
+
+        connstr = "mongodb://" + creds["mongodb_userid"] + ":" + creds["mongodb_passwd"] + "@pfmongodbcluster0-shard-00-00-16fyb.mongodb.net:27017, " \
+              "pfmongodbcluster0-shard-00-01-16fyb.mongodb.net:27017," \
+              "pfmongodbcluster0-shard-00-02-16fyb.mongodb.net:27017/" \
+              "test?ssl=true&replicaSet=PFMongoDBCluster0-shard-0&authSource=admin&retryWrites=true"
+
+
+        insertMongoDB(connstr, jsondata)
 
     else:
         print("Please use 'azuresql' or 'mongodb'")

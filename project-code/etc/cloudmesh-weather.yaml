@@ -35,6 +35,12 @@ cloudmesh:
         AZURE_SQLDATABASESERVER:    'pfillimansql.database.windows.net'
         AZURE_DATABASENAME:         'AdvWorksLT'
         AZURE_SQLSERVER_USERID:     'sqladmin@pfillimansql'
-        AZURE_SECRET_KEY:           'XXXXXXXX'
+        AZURE_SECRET_KEY:           'SqlDba123'
         AZURE_SQL_DRIVER:           '{ODBC Driver 13 for SQL Server}'
         AZURE_MANAGEMENT_CERT_PATH: 'C:/Demo/azure_cert.pem'
+  data:
+    mongodb:
+      credentials:
+       MONGODB_USERID:              'mongoadmin'
+       MONGODB_PASSWD:              'MongoAdmin123'
+      
