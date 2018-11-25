@@ -42,16 +42,22 @@ The architecture diagram for this project is shown in Figure 1. The architecture
 
 #### API Server
 
+The API server is built using swagger 2.0 The swagger.yaml file identifies which attributes of the weather data that will be received from the OpenWeatherMap API. The swagger.yaml file is used by the server.py source file which outlines the HTTP CRUD method requests. Additionally, a secondary source file, weatherapi.py details the methods used when calling the HTTP requests, parsing the parameters out of the client URL request, parsing the connection information to the databases from a config file, transforming raw weather data into decoded information, and determining the proper persisted data store.
 
 
 #### API Client
 
+The client uses a simple URL request in the format *http://localhost:5000/weather?dbname?<mongodb or azuresql>* to retrieve information from the REST service. The client will also need to provide connection information in a configuration file to the MongoDB and or Azure SQL databases to store information in their database(s). 
 
 
 #### MongoDB Database
 
+The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in  that database to store the non-relational data from the REST service.
+
 
 #### Azure SQL Database
+
+
 
 
 #### OpenWeatherMap API
