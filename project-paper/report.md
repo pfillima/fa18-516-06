@@ -114,6 +114,7 @@ The following are the steps to reproduce this project running on a Linux Ubuntu 
 
 ```python
 
+> cd cloudmesh/fa18-516-06/project-code
 > make install
 
 ```
@@ -122,13 +123,19 @@ The following are the steps to reproduce this project running on a Linux Ubuntu 
 
 3. Under the directory /project-code/weather, execute the source file *server.py* with the command *python server.py*
 
+```python
+
+> cd weather
+> python server.py
+
+```
+
+
 4. Run the client side opening a web browser with the URL *http://127.0.0.1:5000/weather*. From here we can see that the server side piece is running by seeing the current weather data in JSON format.
 
 5. To insert data into the MongoDB specified in step 2, run the URL *http://127.0.0.1:5000/weather?dbname=mongodb*. After running this, we see the JSON data as we did in step 4, but also this has been inserted into our database and collection in MongoDB.
 
 6. To insert data into the specified Azure SQL Database, run the URL *http://127.0.0.1:5000/weather?dbname=azuresql*. We see the weather information in the web browser as well as the subsequent insert into the Azure SQL database.
-
-
 
 
 
