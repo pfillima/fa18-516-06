@@ -8,7 +8,7 @@
 
 ---
 
-Keywords: Azure, MongoDB, Swagger, OpenWeatherMap
+Keywords: Azure SQL, MongoDB, Atlas, Swagger, OpenWeatherMap, REST, DBaaS
 
 ---
 
@@ -81,7 +81,6 @@ Similar to creating the cloud-based MongoDB database, an Azure SQL Database can 
 The OpenWeatherMap public API is where we retrieve our current weather data. The format used to retrieve this is *http://api.openweathermap.org/data/2.5/weather?q=mycityname&appid=myappkey* [fa18-516-06-OpenWeatherMap1]. Again, For this project, there is a free or minimal cost subscription is used. With the free OpenWeatherMap subscription we can retrieve sixty or fewer api calls per minute [fa18-516-06-OpenWeatherMap2].
 
 
-
 ## Implementation
 
 The implementation to accomplish this project is broken up into source files in the following directories.
@@ -139,11 +138,16 @@ The following are the steps to reproduce this project running on a Linux Ubuntu 
 
 ## Technologies Used
 
-There were many technologies used in this project. The sourse code was created using Python version 3 with multiple packages including flask, flask_restful, connexion, and pyodbc. There were two database as a service (DBaaS) services used, MongoDB Atlas and Microsoft Azure SQL Server. Finally, a REST service was used from OpenWeatherMap to import data into our REST service.
+There were many technologies used in this project. The source code was created using Python version 3 with multiple packages including flask, flask_restful, connexion, and pyodbc. There were two database as a service (DBaaS) services used, MongoDB Atlas and Microsoft Azure SQL Server. Finally, a REST service was used from OpenWeatherMap to import data into our REST service.
+
+This project encompassed many different technologies working together. With our REST service at the center as shown in the architecture diagram, Figure 1, we take input from the client URL, retrieve API data from OpenWeatherMap, and import into one of two DBaaS.
 
 
 ## Results
 
+Upon running the steps outlined above in Steps to Reproduce, there are three outcomes to test.
+
+**Insert data into MongoDB**
 
 
 
@@ -153,9 +157,6 @@ There were many technologies used in this project. The sourse code was created u
 
 
 ## Application Benchmarks
-
-
-## (Limitations)
 
 
 ## Conclusion
