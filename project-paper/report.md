@@ -13,7 +13,7 @@ Keywords: Azure, MongoDB, Swagger, OpenWeatherMap
 ---
 
 ## Abstract
-For the final project, a RESTful API service was created using weather data through the OpenWeatherMap API that retrieves current weather information and stores this information to a persisted data store in either a MongoDB database or an Azure SQL Server database. A user can use this API service in one step to retrieve and store real-time weather data to a personal persisted storage connection.
+For the final project, a RESTful API service was created using weather data through the OpenWeatherMap API that retrieves current weather information and stores this information to a persisted data store in either a MongoDB Atlas database or a Microsoft Azure SQL Server database. A user can use this API service in one step to retrieve and store real-time weather data to a personal persisted storage connection.
 
 The goals for this project are to gain experience with creating a RESTful API and use sample data retrieved from a public API to use with MongoDB database as well as as with a relational Azure SQL database.
 
@@ -69,7 +69,7 @@ The MongoDB database used in this project is the cloud-based MongoDB Atlas datab
 
 #### Azure SQL Database
 
-Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic DTU-based pricing tier SQL Server server is used. The Basic pricing tier has a max total data size of two gigabytes and is under five USD per month [fa18-516-06-AzureSQL1]. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
+Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic DTU-based pricing tier Azure SQL Server database server is used. The Basic pricing tier has a max total data size of 2 gigabytes and is under 5 USD per month [fa18-516-06-AzureSQL1]. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
 
 ![Azure SQL Server Interface](images/AzureSQL.JPG)
 
@@ -130,7 +130,6 @@ The following are the steps to reproduce this project running on a Linux Ubuntu 
 
 ```
 
-
 4. Run the client side opening a web browser with the URL *http://127.0.0.1:5000/weather*. From here we can see that the server side piece is running by seeing the current weather data in JSON format.
 
 5. To insert data into the MongoDB specified in step 2, run the URL *http://127.0.0.1:5000/weather?dbname=mongodb*. After running this, we see the JSON data as we did in step 4, but also this has been inserted into our database and collection in MongoDB.
@@ -138,11 +137,9 @@ The following are the steps to reproduce this project running on a Linux Ubuntu 
 6. To insert data into the specified Azure SQL Database, run the URL *http://127.0.0.1:5000/weather?dbname=azuresql*. We see the weather information in the web browser as well as the subsequent insert into the Azure SQL database.
 
 
-
 ## Technologies Used
-swagger, flask, openweathermap api, MongoDB Atlas on AWS, Azure SQL Database
 
-
+There were many technologies used in this project. The sourse code was created using Python version 3 with multiple packages including flask, flask_restful, connexion, and pyodbc. There were two database as a service (DBaaS) services used, MongoDB Atlas and Microsoft Azure SQL Server. Finally, a REST service was used from OpenWeatherMap to import data into our REST service.
 
 
 ## Results
@@ -164,6 +161,5 @@ swagger, flask, openweathermap api, MongoDB Atlas on AWS, Azure SQL Database
 ## Conclusion
 
 
-## (Work Breakdown)
 
 
