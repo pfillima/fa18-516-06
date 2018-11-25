@@ -38,7 +38,11 @@ The outcome will be for the client to send an HTTP request to the API server and
 
 ## Architecture
 
-The architecture diagram for this project is shown in Figure 1. The architecture is separated into five components.
+The architecture diagram for this project is shown in Figure 1. 
+
+![ArchitectureDiagram](images/Figure1.JPG)
+
+The architecture is separated into five components.
 
 #### API Server
 
@@ -47,26 +51,23 @@ The API server is built using swagger 2.0 The swagger.yaml file identifies which
 
 #### API Client
 
-The client uses a simple URL request in the format *http://localhost:5000/weather?dbname?<mongodb or azuresql>* to retrieve information from the REST service. The client will also need to provide connection information in a configuration file to the MongoDB and or Azure SQL databases to store information in their database(s). 
+The client uses a simple URL request in the format *http://localhost:5000/weather?dbname?mongodb* or *http://localhost:5000/weather?azuresql>* to retrieve information from the REST service. We are using localhost port 5000 in this project. The client will also need to provide connection information in a configuration file to the MongoDB and or Azure SQL databases to store information in their database(s). 
 
 
 #### MongoDB Database
 
-The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in  that database to store the non-relational data from the REST service.
+The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in that database to store the non-relational data from the REST service. The cluster used in this project is a free tier MongoDB Atlas M0 Instance cluster using version 4.0.4 on an AWS server.
 
 
 #### Azure SQL Database
 
-
+Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic pricing tier SQL Server server is used. The Basic pricing tier has a max total data size of two gigabytes and is under five USD per month. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
 
 
 #### OpenWeatherMap API
 
+The OpenWeatherMap public API is where we retrieve our current weather data. The format used to retrieve this is *http://api.openweathermap.org/data/2.5/weather?q=mycityname&appid=myappkey*. Again, For this project, there is a free or minimal cost subscription is used. With the free OpenWeatherMap subscription we can retrieve sixty or fewer api calls per minute.
 
-
-
-
-![ArchitectureDiagram](images/Figure1.JPG)
 
 
 ## Implementation
