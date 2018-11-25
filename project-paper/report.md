@@ -69,7 +69,7 @@ The MongoDB database used in this project is the cloud-based MongoDB Atlas datab
 
 #### Azure SQL Database
 
-Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic pricing tier SQL Server server is used. The Basic pricing tier has a max total data size of two gigabytes and is under five USD per month. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
+Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic DTU-based pricing tier SQL Server server is used. The Basic pricing tier has a max total data size of two gigabytes and is under five USD per month [fa18-516-06-AzureSQL1]. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
 
 ![Azure SQL Server Interface](images/AzureSQL.JPG)
 
