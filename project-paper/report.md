@@ -37,7 +37,28 @@ The outcome will be for the client to send an HTTP request to the API server and
 
 
 ## Architecture
-swagger, flask, OpenWeatherMap API, MongoDB, Atlas, Azure SQL Database
+
+The architecture diagram for this project is shown in Figure 1. The architecture is separated into five components.
+
+### API Server
+
+
+
+### API Client
+
+
+
+### MongoDB Database
+
+
+### Azure SQL Database
+
+
+### OpenWeatherMap API
+
+
+
+
 
 ![ArchitectureDiagram](images/Figure1.JPG)
 
