@@ -78,7 +78,7 @@ Similar to creating the cloud-based MongoDB database, an Azure SQL Database can 
 
 #### OpenWeatherMap API
 
-The OpenWeatherMap public API is where we retrieve our current weather data. The format used to retrieve this is *http://api.openweathermap.org/data/2.5/weather?q=mycityname&appid=myappkey*. Again, For this project, there is a free or minimal cost subscription is used. With the free OpenWeatherMap subscription we can retrieve sixty or fewer api calls per minute.
+The OpenWeatherMap public API is where we retrieve our current weather data. The format used to retrieve this is *http://api.openweathermap.org/data/2.5/weather?q=mycityname&appid=myappkey* [fa18-516-06-OpenWeatherMap1]. Again, For this project, there is a free or minimal cost subscription is used. With the free OpenWeatherMap subscription we can retrieve sixty or fewer api calls per minute [fa18-516-06-OpenWeatherMap2].
 
 
 
