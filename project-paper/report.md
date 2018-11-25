@@ -40,7 +40,11 @@ The outcome will be for the client to send an HTTP request to the API server and
 
 The architecture diagram for this project is shown in Figure 1. 
 
-![ArchitectureDiagram](images/Figure1.JPG)
+
+![Architecture Diagram](images/Figure1.JPG)
+
+{#fig:Figure 1}
+
 
 The architecture is separated into five components.
 
@@ -58,13 +62,19 @@ The client uses a simple URL request in the format *http://localhost:5000/weathe
 
 The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in that database to store the non-relational data from the REST service. The cluster used in this project is a free tier MongoDB Atlas M0 Instance cluster using version 4.0.4 on an AWS server.
 
-![MongoDB](images/MongoDB.JPG)
+![Mongo Atlas Interface](images/MongoDB.JPG)
+
+{#fig:Figure 2}
+
 
 #### Azure SQL Database
 
 Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic pricing tier SQL Server server is used. The Basic pricing tier has a max total data size of two gigabytes and is under five USD per month. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
 
-![AzureSQL](images/AzureSQL.JPG)
+![Azure SQL Server Interface](images/AzureSQL.JPG)
+
+{#fig:Figure 3}
+
 
 #### OpenWeatherMap API
 
