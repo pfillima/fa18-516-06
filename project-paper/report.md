@@ -1,4 +1,4 @@
-# Creating a RESTful API Service Using MongoDB and Azure :hand: fa18-516-06
+# Creating a RESTful API Service Using MongoDB and Azure SQL Database :hand: fa18-516-06
 
 | Paul Filliman
 | pfillima@iu.edu
@@ -148,6 +148,21 @@ This project encompassed many different technologies working together. With our 
 Upon running the steps outlined above in Steps to Reproduce, there are three outcomes to test.
 
 **Insert data into MongoDB**
+
+With this first test, we want to see a JSON formatted file inserted into our MongoDB collection upon entering the URL *http://127.0.0.1:5000/weather?dbname=mongodb* from a client web browser.
+
+*Client*
+
+![Client Using Parameter to Insert Into MongoDB](images/ClientMongoDB.png)
+
+{#fig:Figure 3}
+
+
+*MongoDB Result*
+
+![MongoDB Web Interface Showing Results](images/MongoDBResults.png)
+
+{#fig:Figure 4}
 
 
 
