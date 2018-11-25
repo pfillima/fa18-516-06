@@ -145,27 +145,49 @@ This project encompassed many different technologies working together. With our 
 
 ## Results
 
-Upon running the steps outlined above in Steps to Reproduce, there are three outcomes to test.
+Upon running the steps outlined above in Steps to Reproduce, there are two outcomes to test.
 
 **Insert data into MongoDB**
 
 With this first test, we want to see a JSON formatted file inserted into our MongoDB collection upon entering the URL *http://127.0.0.1:5000/weather?dbname=mongodb* from a client web browser.
 
-*Client*
+**Client**
 
 ![Client Using Parameter to Insert Into MongoDB](images/ClientMongoDB.png)
 
 {#fig:Figure 3}
 
 
-*MongoDB Result*
+**MongoDB Result**
 
 ![MongoDB Web Interface Showing Results](images/MongoDBResults.png)
 
 {#fig:Figure 4}
 
+We can see from figure 3 and figure 4 that the file returned in the result was committed to the MongoDB database.
 
 
+
+**Insert data into Azure SQL Database**
+
+With this second test, we again want to see the JSON formatted file inserted into our Azure SQL Server Database table upon entering the URL *http://127.0.0.1:5000/weather?dbname=azuresql* from a client web browser.
+
+**Client**
+
+![Client Using Parameter to Insert Into Azure SQL Database](images/ClientAzureSQL.png)
+
+{#fig:Figure 5}
+
+
+**Azure SQL Database Result**
+
+![Azure SQL Server Web Interface Showing Results](images/AzureResult.png)
+
+{#fig:Figure 6}
+
+We can see from figure 5 and figure 6 that the file returned in the result was committed as a row into the prior specified Azure SQL Server database table.
+
+We see from these results that our REST API is working, retrieving real-time weather data through a web API and inserting these rows into either a MongoDB database or a Microsoft Azure SQL Server database.
 
 
 ## Deployment Benchmarks
