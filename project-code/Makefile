@@ -4,7 +4,7 @@ install:
 
 
 getapi:
-	python weatherapi.py
+	python ./weather/server.py
 	sleep 3
 	@echo "==============================================================================="
 	@echo "Get the info"

@@ -13,7 +13,6 @@ from bson import json_util
 app = Flask(__name__)
 
 
-<<<<<<< HEAD
 def getCredentials():
     dict = {}
     with open("../etc/cloudmesh-weather.yaml", 'r') as ymlfile:
@@ -28,18 +27,6 @@ def getCredentials():
     dict["mongodb_passwd"] = cfg['cloudmesh']['data']['mongodb']['credentials']['MONGODB_PASSWD']
 
     return dict
-
-=======
-##################################################
-server = 'pfillimansql.database.windows.net'
-database = 'AdvWorksLT'
-username = 'sqladmin@pfillimansql'
-password = 'XXXX'
-driver = '{ODBC Driver 13 for SQL Server}'
-mongouid = 'mongoadmin'
-mongopwd = 'XXX'
-##################################################
->>>>>>> 12f9b3fdee707d22a452e638f2b3f63be4cd4e4c
 
 
 def buildOpenWeatherMapAPIRequest(apikey, cityname):
@@ -149,7 +136,7 @@ def insertMongoDB(connstr, jsondata):
     conn.close()
 
 
-@app.route("/weather", methods=["GET"])
+@app.route("/weather", methods=["GET", "POST"])
 def get_weather():
     # grab weather info from openweatherapi
     openweatherkey = "338f5c207f400c983df8f00e1ce658ac"
