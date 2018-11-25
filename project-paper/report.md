@@ -60,7 +60,7 @@ The client uses a simple URL request in the format *http://localhost:5000/weathe
 
 #### MongoDB Database
 
-The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in that database to store the non-relational data from the REST service. The cluster used in this project is a free tier MongoDB Atlas M0 Instance cluster using version 4.0.4 on an AWS server.
+The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in that database to store the non-relational data from the REST service. The cluster used in this project is a free tier MongoDB Atlas M0 Instance cluster using version 4.0.4 on an AWS server. This cluster can provide up to 512 megabytes free data storage which will be within the limitations for this project fa18-516-06-MongoDB1.
 
 ![Mongo Atlas Interface](images/MongoDB.JPG)
 
