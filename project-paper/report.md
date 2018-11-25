@@ -1,4 +1,4 @@
-# RESTful API Service Using MongoDB and Azure :hand: fa18-516-06
+# Creating a RESTful API Service Using MongoDB and Azure :hand: fa18-516-06
 
 | Paul Filliman
 | pfillima@iu.edu
@@ -18,6 +18,8 @@ For the final project, a RESTful API service was created using weather data thro
 The goals for this project are to gain experience with creating a RESTful API and use sample data retrieved from a public API to use with MongoDB database as well as as with a relational Azure SQL database.
 
 ## Introduction
+
+For this project, we create a REST API service using a swagger yaml file to define our service, server side components to implement the service, creation of a cloud-based MongoDB database using MongoDB Atlas, creation of an Azure SQL Database, and a client side component to call the service through a web URL call.
 
 
 
