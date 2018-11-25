@@ -27,11 +27,15 @@ The data used in this project is current weather data from the public API OpenWe
 
 ## Design
 
+As seen in Figure 1, this project can be separated into the client resources and the API server resources. The API server is central to this project. Within the API server components, we have three source files, a Swagger 2.0 yaml file used to outline the sample weather data pull, a server source file in Python to outline the GET/POST routines, and a secondary Python source file to implement the GET/POST routines.
 
+On the API client side, we need to setup a MongoDB database cluster using the cloud-based MongoDB Atlas. We need to create a MongoDB database within this cluster and a collection within the database. We also need to setup an Azure SQL Database server, a database, and construct a table creation script to insert the sample data. The client will store connection credentials for these database servers into a config file.
+
+The outcome will be for the client to send an HTTP request to the API server and to have the real-time data inserted into either MongoDB or Azure SQL using a URL parameter specifier.
 
 
 ## Architecture
-swagger, flask, openweathermap api, MongoDB Atlas, AZure SQL Database
+swagger, flask, OpenWeatherMap API, MongoDB, Atlas, Azure SQL Database
 
 ![ArchitectureDiagram](images/Figure1.JPG)
 
