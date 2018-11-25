@@ -12,7 +12,10 @@ from bson import json_util
 
 app = Flask(__name__)
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5d239d5db97f9dc81c2f531b2215ad4eb9cf91ee
 def getCredentials():
     dict = {}
     with open("../etc/cloudmesh-weather.yaml", 'r') as ymlfile:
