@@ -86,23 +86,23 @@ The OpenWeatherMap public API is where we retrieve our current weather data. The
 
 The implementation to accomplish this project is broken up into source files in the following directories.
 
-1. /project-code/Makefile
+1. **/project-code/Makefile**
    This is the Makefile that is used to install the project Python requirement packages.
 
-2. /project-code/requirements.txt
-3. /project-code/packages.txt
+2. **/project-code/requirements.txt**
+3. **/project-code/packages.txt**
    The requirements.txt and the packages.txt files contain the Python packages needed to be installed prior to executing the project on a Linux Ubuntu 16.04 operating system.
 
-4. /project-code/etc/cloudmesh-weather.yaml
+4. **/project-code/etc/cloudmesh-weather.yaml**
    This yaml file contains the connection information attributes for connecting to the MongoDB Atlas cloud database and the Azure SQL cloud Database.
 
-5. /project-code/services/weather.yaml
+5. **/project-code/services/weather.yaml**
    This yaml file contains the structure of the data that will be retrieved from the OpenWeatherMap API service and is one of the main source files in this project. This yaml file does many things. First, it uses the swagger version 2.0 and maps the data retrieved to work with our REST API data structure. Secondly, this file contains the parameters for the client URL, for example the database type where the retrieved information will be persisted. Thirdly, this file references the operation identifier method that will be used to interface the retrieved information with the project API.
 
-6. /project-code/weather/server.py
+6. **/project-code/weather/server.py**
    The server file is the central part of this project. The server.py source file uses the Python package connexion and references weather.yaml in the creation of the connexion app api. This file is the parent file which needs to be run first before all client tasks can run successfully.
 
-7. /project-code/weather/weatherapi.py
+7. **/project-code/weather/weatherapi.py**
    This file is the largest source file and contains all of the detailed tasks that does many things including parsing security information from the connection file cloudmesh-weather.yaml, retrieves and transforms raw weather API data, creates an Azure SQL database table for inserts, parses the raw JSON data into separate columns, creates connection strings for Azure SQL and MongoDB, parses URL parameters for database type, and finally inserts into a MongoDB collection or an Azure SQL Database table.
 
 
@@ -111,6 +111,12 @@ The implementation to accomplish this project is broken up into source files in 
 The following are the steps to reproduce this project running on a Linux Ubuntu 16.04 Operating System using Python version 3.7.1.
 
 1. Using the Makefile under /project-code, install the requirements using the command *make install*.
+
+```python
+
+> make install
+
+```
 
 2. If needing to use a separate connection for MongoDB or for Azure SQL Database other than the default connections, edit the *cloudmesh-weather.yaml* file under /project-code/etc/.
 
