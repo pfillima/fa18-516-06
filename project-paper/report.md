@@ -40,21 +40,21 @@ The outcome will be for the client to send an HTTP request to the API server and
 
 The architecture diagram for this project is shown in Figure 1. The architecture is separated into five components.
 
-### API Server
+#### API Server
 
 
 
-### API Client
+#### API Client
 
 
 
-### MongoDB Database
+#### MongoDB Database
 
 
-### Azure SQL Database
+#### Azure SQL Database
 
 
-### OpenWeatherMap API
+#### OpenWeatherMap API
 
 
 
