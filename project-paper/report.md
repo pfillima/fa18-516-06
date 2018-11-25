@@ -33,7 +33,8 @@ The data used in this project is current weather data from the public API OpenWe
 ## Architecture
 swagger, flask, openweathermap api, MongoDB Atlas, AZure SQL Database
 
-![ArchDiagram](images/FP1.JPG)
+![ArchitectureDiagram](images/Figure1.JPG)
+
 
 ## Implementation
 1. install from requirements.txt
