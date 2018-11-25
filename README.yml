@@ -15,9 +15,9 @@ section:
 paper:
     - title: Azure Data Services
       keyword: Azure Data Services
-      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md         
+      url: https://github.com/cloudmesh-community/fa18-516-06/paper/paper.md         
 project:
-    - title: TBD
-      keyword: Azure Data
-      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/chapter/whatever.md    
+    - title: Creating a RESTful API Service Using MongoDB and Azure SQL Database
+      keyword: Azure SQL, MongoDB, Atlas, Swagger, OpenWeatherMap, REST, DBaaS
+      url: https://github.com/cloudmesh-community/fa18-516-06/project-paper/report.md    
 
