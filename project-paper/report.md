@@ -1,7 +1,16 @@
-# TBD :hand: fa18-516-06
+# RESTful API Service Using MongoDB and Azure :hand: fa18-516-06
 
-| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/project-paper/report.md)
+| Paul Filliman
+| pfillima@iu.edu
+| Indiana University
+| hid: fa18-516-06
+| github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
+---
+
+Keywords: Azure, MongoDB, Swagger, weather
+
+---
 
 ## Abstract
 This project builds a sample REST service using weather data through the openweathermap API that retrieves current weather information and stores this information to a persisted data store in either a MongoDB database or an Azure SQL Server database. A user can use this API service to retrieve and store real-time weather data to a custom persisted storage connection.
