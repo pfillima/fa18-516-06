@@ -8,16 +8,18 @@
 
 ---
 
-Keywords: Azure, MongoDB, Swagger, weather
+Keywords: Azure, MongoDB, Swagger, openweathermap
 
 ---
 
 ## Abstract
-This project builds a sample REST service using weather data through the openweathermap API that retrieves current weather information and stores this information to a persisted data store in either a MongoDB database or an Azure SQL Server database. A user can use this API service to retrieve and store real-time weather data to a custom persisted storage connection.
+For the final project, a RESTful API service was created using weather data through the openweathermap API that retrieves current weather information and stores this information to a persisted data store in either a MongoDB database or an Azure SQL Server database. A user can use this API service in one step to retrieve and store real-time weather data to a personal persisted storage connection.
+
+The goals for this project are to gain experience with creating a RESTful API and use sample data retrieved from a public API to use with MongoDB database as well as as with a relational Azure SQL database.
 
 ## Introduction
 
-This pro
+
 
 
 ## Design
