@@ -9,7 +9,7 @@ import connexion
 #app = Flask(__name__, template_folder = "template")
 
 app = connexion.App(__name__, specification_dir = "./")
-app.add_api("swagger.yaml")
+app.add_api("../services/weather.yaml")
 
 # Read the yaml file to configure the endpoints
 #app.add_api("cpu.yaml")
