@@ -190,14 +190,9 @@ We can see from figure 5 and figure 6 that the file returned in the result was c
 We see from these results that our REST API is working, retrieving real-time weather data through a web API and inserting these rows into either a MongoDB database or a Microsoft Azure SQL Server database.
 
 
-## Deployment Benchmarks
-
-
-## Application Benchmarks
-
-
 ## Conclusion
 
+The goal and outcome for this project is to gain familiarity and experience in creating a RESTful API and use sample data retrieved from a public API to use with MongoDB database as well as as with a relational Azure SQL database. To get from input to output, there were several technologies that were used and these separate technologies were needed to communicate with each other.
 
-
+There are many ways to enhance this REST service created with this project. For example, multiple cities data can be used, or create a city as a new URL parameter. We can also automate this process to retrieve data every few seconds or every few minutes. Other technologies can be used with larger amounts of streaming data including Spark, Azure Databricks, and Azure Streaming Analytics. These technologies are higher cost options which could be used in corporate environments.
 
