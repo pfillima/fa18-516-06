@@ -92,13 +92,14 @@ Azure HDInsight services are typically used when working with massive amounts of
 
 The following figure shows HDInsight within a modern data warehouse. There are multiple data sources from log files, and structured and unstructured data as batch processes for the HDInsight data sources. These data are into Azure Storage or Azure Data Lake Stores. Spark and HiveQL can then be used to query the Azure storage and these can be used to build business intelligence data models, for example Azure Analysis Services models. Finally, these data can be visualized using PowerBI.
 
-![Modern Data Warehouse using HDInsight](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight}
+![Modern Data Warehouse using HDInsight](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight} 
+[@fa18-516-06-HDI1]
 
 
 The next figure shows Azure HDInsight in an Internet of Things scenario. Various IoT streams can be fed into IoT hubs then read into HDInsight using the Storm, Kafka, or Spark services, then real-time visualizations or applications can be fed data from HDInsight.
 
 ![HDInsight in an IoT scenario](images/Azure_HDInsightIoT.png){#fig:HDInsightinanIoTscenario}
-
+[@fa18-516-06-HDI1]
 
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
 
