@@ -6,6 +6,13 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
+
+**:mortar_board: Learning Objectives**
+
+* Create a first REST API
+* Retrieve data from a public API
+* Use MongoDB and Azure SQL as DBaaS
+
 ---
 
 Keywords: Azure SQL, MongoDB, Atlas, Swagger, OpenWeatherMap, REST, DBaaS
