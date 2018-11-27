@@ -48,12 +48,12 @@ The creation of an Azure SQL database is very easy:
 6. Select the pricing model
 7. Click the *Create* button
 
-![Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG){#fig:CreateAzureSQLDatabase}
+![CreateAzureSQLDatabase](images/Azure_CreateSQLDatabase.JPG){#fig:CreateAzureSQLDatabase}
 
 
 Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:fig:CreateAzureSQLDatabase.
 
-![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG){#fig:ConnecttoAzureSQLDatabase}
+![ConnecttoAzureSQLDatabase](images/Azure_SQLDBConnect.JPG){#fig:ConnecttoAzureSQLDatabase}
 
 
 ### Azure MySQL, PostgreSQL, and MariaDB Databases
@@ -76,7 +76,8 @@ The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive 
 
 One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse2]. Various Azure services can be used having the Azure SQL Data Warehouse as a source, including Azure Analysis Services, other Azure SQL Data Warehouses, and Azure SQL Databases.
 
-![AzureDataWarehouse](images/Azure_SQLDW1.jpg){#fig:AzureDataWarehouse} [@fa18-516-06-AzureSQLDataWarehouseFig]
+![AzureDataWarehouse](images/Azure_SQLDW1.jpg){#fig:AzureDataWarehouse}
+[@fa18-516-06-AzureSQLDataWarehouse4]
 
 
 Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time. Much like Azure SQL Database described above, this has high-avilability and backup and recoverability features as well [@fa18-516-06-AzureSQLDataWarehouse1].
