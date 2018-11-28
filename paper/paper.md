@@ -6,10 +6,6 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
-:o: some images are plagearized as the citation in the caption is not there, mentioned before
-
-:o: labels in markdown must not have any spaces in it, mentioned before
-
 ---
 
 Keywords: Azure
