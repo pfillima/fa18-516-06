@@ -6,10 +6,10 @@ owner:
   community: "e516"
   semester: "fa18"
 section:
-    - title: Azure Data Factory
+    - title: Azure Event Hubs
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureEventHubs.md
-    - title: Azure IoT
-      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/AzureIoT.md
+    - title: Connecting a Raspberry Pi to the Azure IoT Hub
+      url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/RaspberryPiAzureIoT.md
     - title: Cloud Computing Using Visual Studio
       url: https://github.com/cloudmesh-community/fa18-516-06/blob/master/sections/VisualStudioCloudProgramming.md
 paper:
