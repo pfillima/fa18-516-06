@@ -34,19 +34,29 @@ Once the IoT Hub has been created in steps 1 through 5 above, the Raspberry Pi c
 10. Log into Raspbian Stretch and enable SSH and SPI if sensors are needed in the Raspberry Pi project using Raspberry Pi Configuration
 11. Create a new user other than su for Raspberry Pi
 
-''' bash
+``` bash
 
 > sudo adduser <myUserName>
 
-'''
+```
 
 12. Determine the IP address of the Raspberry PI
+
 
 ## Configuring Raspberry Pi
 
 Finally, we use the client to connect to RaspberryPI
 
 13. On the client machine, open PuTTY and enter the Raspberry PI IP address.
+
+
+14. When the PuTTY terminal opens, enter the userid created in step 11
+
+
+We can see under the Azure IoT Hub Metrics under *Monitoring* that we have a device signal from the Raspberry Pi configured above.
+
+
+
 
 
 
