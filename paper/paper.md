@@ -6,6 +6,8 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
+:o: your figure captions are still not correct, I propose to look at our example ...
+
 ---
 
 Keywords: Azure
