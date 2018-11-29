@@ -35,7 +35,7 @@ Once the IoT Hub has been created in steps 1 through 5 above, the Raspberry Pi c
 11. Create a new user other than su for Raspberry Pi
 
 
-![RPIconfig](images/RPiconfig.JPG)
+![RPIconfig](images/RPiconfig.png)
 
 {#fig:Figure 1}
 
