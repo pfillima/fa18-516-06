@@ -57,20 +57,18 @@ Finally, we use the client to connect to RaspberryPI
 13. On the client machine, open PuTTY and enter the Raspberry PI IP address.
 
 
+![RPIPutty](images/RPIPutty.JPG)
 
-![RPIConnect](images/RPIConnect.JPG)
-
-{#fig:Figure 2}
+{#fig:Figure 3}
 
 
 
 14. When the PuTTY terminal opens, enter the userid created in step 11
 
 
+![RPIConnect](images/RPIConnect.JPG)
 
-![RPIPutty](images/RPIPutty.JPG)
-
-{#fig:Figure 3}
+{#fig:Figure 2}
 
 
 
