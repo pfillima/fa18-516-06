@@ -98,13 +98,19 @@ The following figure shows HDInsight within a modern data warehouse. There are m
 +@fig:ModernDataWarehouseusingHDInsight
 [@fa18-516-06-AzureSQLDataWarehouse4]
 
-![Azure Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight}
+![Modern Data Warehouse using HDInsight [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight}
 
 
 
 The next figure shows Azure HDInsight in an Internet of Things scenario. Various IoT streams can be fed into IoT hubs then read into HDInsight using the Storm, Kafka, or Spark services, then real-time visualizations or applications can be fed data from HDInsight.
 
-![HDInsight in an IoT scenario [@fa18-516-06-HDI1] ](images/Azure_HDInsightIoT.png){#fig:HDInsightinanIoTscenario}
+
++@fig:HDInsightinanIoTscenario
+[@fa18-516-06-HDI1]
+
+![HDInsight in an IoT scenario [@fa18-516-06-HDI1]](images/Azure_HDInsightIoT.png)
+{#fig:HDInsightinanIoTscenario}
+
 
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
 
