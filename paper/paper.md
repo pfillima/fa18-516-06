@@ -75,12 +75,10 @@ The Azure SQL Data Warehouse is a cloud-based, data warehouse that uses massive 
 One of strengths of Azure SQL Data Warehouse is its ability to ingest modern data sources, for example datalakes and Hadoop as shown in the figure below. With the ability of using Polybase, a user can query non-relation as well as relation data sources that are stored in Azure SQL Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse2]. Various Azure services can be used having the Azure SQL Data Warehouse as a source, including Azure Analysis Services, other Azure SQL Data Warehouses, and Azure SQL Databases.
 
 
-<br><br>
 +@fig:AzureDataWarehouse
 [@fa18-516-06-AzureSQLDataWarehouse4]
 
 ![Azure Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_SQLDW1.jpg){#fig:AzureDataWarehouse}
-<br><br>
 
 
 Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time. Much like Azure SQL Database described above, this has high-avilability and backup and recoverability features as well [@fa18-516-06-AzureSQLDataWarehouse1].
@@ -96,7 +94,11 @@ Azure HDInsight services are typically used when working with massive amounts of
 
 The following figure shows HDInsight within a modern data warehouse. There are multiple data sources from log files, and structured and unstructured data as batch processes for the HDInsight data sources. These data are into Azure Storage or Azure Data Lake Stores. Spark and HiveQL can then be used to query the Azure storage and these can be used to build business intelligence data models, for example Azure Analysis Services models. Finally, these data can be visualized using PowerBI.
 
-![Modern Data Warehouse using HDInsight [@fa18-516-06-AzureSQLDataWarehouse4] ](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight} 
+
++@fig:ModernDataWarehouseusingHDInsight
+[@fa18-516-06-AzureSQLDataWarehouse4]
+
+![Azure Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight}
 
 
 
@@ -112,7 +114,12 @@ The Azure Stream Analytics service processes output from various IoT sources and
 
 Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the Azure Iot Hub as well as Azure Event Hubs, Blob storage, and other relational or non-relational data sources. Once ingested into Azure Stream Analytics, real-time analytics can be gained using machine learning algorithms, for example detecting a fraudulent bank transaction. The data output from Azure Stream Analytics can also be loaded into other and uses is a part of the Iot.
 
-![Azure Stream Analytics [@fa18-516-06-ASA] ](images/stream_analytics_intro_pipeline.png){#fig:AzureStreamAnalytics}
+
++@fig:AzureStreamAnalytics
+[@fa18-516-06-ASA]
+
+![Azure Stream Analytics [@fa18-516-06-ASA]](images/stream_analytics_intro_pipeline.png)
+{#fig:AzureStreamAnalytics}
 
 
 
