@@ -48,7 +48,7 @@ The creation of an Azure SQL database is very easy:
 
 
 +@fig:CreateAzureSQLDatabase
-![Create Azure SQL Database](images/Azure_CreateSQLDatabase.jpg)
+![Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG)
 {#fig:CreateAzureSQLDatabase}
 
 
@@ -57,7 +57,7 @@ Once the database has been created, we can use Microsoft Visual Studio as the de
 
 
 +@fig:ConnecttoAzureSQLDatabase
-![Connect to Azure SQL Database](images/Azure_SQLDBConnect.jpg)
+![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG)
 {#fig:ConnecttoAzureSQLDatabase}
 
 
