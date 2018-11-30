@@ -101,12 +101,10 @@ The following figure shows HDInsight within a modern data warehouse. There are m
 ![Modern Data Warehouse using HDInsight [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight}
 
 
-
 The next figure shows Azure HDInsight in an Internet of Things scenario. Various IoT streams can be fed into IoT hubs then read into HDInsight using the Storm, Kafka, or Spark services, then real-time visualizations or applications can be fed data from HDInsight.
 
 
 ![HDInsight in an IoT scenario [@fa18-516-06-HDI1]](images/Azure_HDInsightIoT.png){#fig:HDInsightinanIoTscenario}
-
 
 
 One the of the strengths of HDInsight is that these services are available in Azure without the work of implementing these clusters in on-premesis servers and also having seamless integration with other Azure services. These services have high performance, five nines (99.999%) SLA and can be used on a per-use basis therefore cutting costs of permanent uptime.
@@ -119,7 +117,6 @@ Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the
 
 
 ![Azure Stream Analytics [@fa18-516-06-ASA]](images/stream_analytics_intro_pipeline.png){#fig:AzureStreamAnalytics}
-
 
 
 There are three basic parts to using Azure Stream Analytics. The first part is creating a stream job which designates the data source and uses a query language similar to SQL to make any transaformations on the incoming data. The third step is specifying where to output the data. 
