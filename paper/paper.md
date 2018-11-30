@@ -85,8 +85,8 @@ One of strengths of Azure SQL Data Warehouse is its ability to ingest modern dat
 
 +@fig:AzureDataWarehouse
 [@fa18-516-06-AzureSQLDataWarehouse4]
-
-![Azure Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_SQLDW1.jpg){#fig:AzureDataWarehouse}
+![Azure Data Warehouse [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_SQLDW1.jpg)
+{#fig:AzureDataWarehouse}
 
 
 Another strength is the ability to only use this service during a particular time of day or week. If the data warehouse user only need access during a regular work week, this could save cost rather than running this service all of the time. Much like Azure SQL Database described above, this has high-avilability and backup and recoverability features as well [@fa18-516-06-AzureSQLDataWarehouse1].
@@ -105,7 +105,6 @@ The following figure shows HDInsight within a modern data warehouse. There are m
 
 +@fig:ModernDataWarehouseusingHDInsight
 [@fa18-516-06-AzureSQLDataWarehouse4]
-
 ![Modern Data Warehouse using HDInsight [@fa18-516-06-AzureSQLDataWarehouse4]](images/Azure_HDInsightDW.png){#fig:ModernDataWarehouseusingHDInsight}
 
 
@@ -115,7 +114,6 @@ The next figure shows Azure HDInsight in an Internet of Things scenario. Various
 
 +@fig:HDInsightinanIoTscenario
 [@fa18-516-06-HDI1]
-
 ![HDInsight in an IoT scenario [@fa18-516-06-HDI1]](images/Azure_HDInsightIoT.png)
 {#fig:HDInsightinanIoTscenario}
 
@@ -131,7 +129,6 @@ Azure Stream Analytics is a part of the Azure IoT suite and ingest data from the
 
 +@fig:AzureStreamAnalytics
 [@fa18-516-06-ASA]
-
 ![Azure Stream Analytics [@fa18-516-06-ASA]](images/stream_analytics_intro_pipeline.png)
 {#fig:AzureStreamAnalytics}
 
