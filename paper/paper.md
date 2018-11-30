@@ -46,12 +46,20 @@ The creation of an Azure SQL database is very easy:
 6. Select the pricing model
 7. Click the *Create* button
 
-![Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG){#fig:CreateAzureSQLDatabase}
+
++@fig:CreateAzureSQLDatabase
+![Create Azure SQL Database](images/Azure_CreateSQLDatabase.jpg)
+{#fig:CreateAzureSQLDatabase}
+
 
 
 Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:fig:CreateAzureSQLDatabase.
 
-![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG){#fig:ConnecttoAzureSQLDatabase}
+
++@fig:ConnecttoAzureSQLDatabase
+![Connect to Azure SQL Database](images/Azure_SQLDBConnect.jpg)
+{#fig:ConnecttoAzureSQLDatabase}
+
 
 
 ### Azure MySQL, PostgreSQL, and MariaDB Databases
