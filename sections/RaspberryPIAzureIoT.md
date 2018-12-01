@@ -57,14 +57,14 @@ Once the IoT Hub has been created in steps 1 through 5 above, the Raspberry Pi c
 
 <myUserName>  ALL=(ALL:ALL) ALL
 
-12. Determine the IP address of the Raspberry PI
+13. Determine the IP address of the Raspberry PI
 
 
 ## Configuring Raspberry Pi
 
 Finally, we use the client to connect to RaspberryPI
 
-13. On the client machine, open PuTTY and enter the Raspberry PI IP address.
+14. On the client machine, open PuTTY and enter the Raspberry PI IP address.
 
 
 ![RPIPutty](images/RPIPutty.JPG)
@@ -73,7 +73,7 @@ Finally, we use the client to connect to RaspberryPI
 
 
 
-14. When the PuTTY terminal opens, enter the userid created in step 11
+15. When the PuTTY terminal opens, enter the userid created in step 11
 
 
 ![RPIConnect](images/RPIConnect.JPG)
