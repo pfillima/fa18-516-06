@@ -47,6 +47,16 @@ Once the IoT Hub has been created in steps 1 through 5 above, the Raspberry Pi c
 
 ```
 
+12. Add the new user create in step 11 to have same privileges as root.
+
+``` bash
+
+> sudo visudo
+
+```
+
+<myUserName>  ALL=(ALL:ALL) ALL
+
 12. Determine the IP address of the Raspberry PI
 
 
