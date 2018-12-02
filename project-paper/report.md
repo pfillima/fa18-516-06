@@ -47,8 +47,6 @@ The outcome will be for the client to send an HTTP request to the API server and
 
 The architecture diagram for this project is shown in Figure 1. 
 
-:o: figure citations not following example
-
 ![ProjectArchitectureDiagram](images/Figure1.JPG){#fig:This figure shows the project architecture diagram.}
 
 
