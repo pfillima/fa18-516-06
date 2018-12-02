@@ -158,13 +158,13 @@ With this first test, we want to see a JSON formatted file inserted into our Mon
 **Client**
 
 
-![ClientUsingParametertoInsertIntoMongoDB](images/ClientMongoDB.JPG){#fig:This figure shows URL using a URL parameter.}
+![ClientUsingParametertoInsertIntoMongoDB](images/ClientMongoDB.png){#fig:This figure shows the URL using the parameter dbname=mongodb to insert into a collection in our MongoDB instance.}
 
 
 **MongoDB Result**
 
 
-![MongoDBWebInterfaceShowingResults](images/MongoDBResults.JPG){#fig:This figure shows results inserted into MongoDB using a URL parameter.}
+![MongoDBWebInterfaceShowingResults](images/MongoDBResults.png){#fig:This figure shows results inserted into MongoDB using a URL parameter.}
 
 
 We can see from figure 3 and figure 4 that the file returned in the result was committed to the MongoDB database.
@@ -177,12 +177,15 @@ With this second test, we again want to see the JSON formatted file inserted int
 
 **Client**
 
-![ClientUsingParametertoInsertIntoAzureSQLDatabase](images/ClientAzureSQL.png){#fig:Figure5}
+
+![ClientUsingParametertoInsertIntoAzureSQLDatabase](images/ClientAzureSQL.png){#fig:This figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance.}
 
 
 **Azure SQL Database Result**
 
-![AzureSQLServerWebInterfaceShowingResults](images/AzureResult.png){#fig:Figure6}
+
+![AzureSQLServerWebInterfaceShowingResults](images/AzureResult.png){#fig:This figure shows results inserted into Azure SQL Database using a URL parameter.}
+
 
 We can see from figure 5 and figure 6 that the file returned in the result was committed as a row into the prior specified Azure SQL Server database table.
 
