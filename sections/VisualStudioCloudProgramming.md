@@ -10,4 +10,5 @@ Azure Data Studio is an install for Visual Studio that enables users to connect 
 
 ## Azure HDInsight Tools
 
-This add-on allows for Hive Interactive Query, Hive Batch Job and PySpark Job against Microsoft HDInsight. [fa18-516-06-AzureHDInsight]
+This add-on allows for Hive Interactive Query, Hive Batch Job and PySpark Job against Microsoft HDInsight [fa18-516-06-AzureHDInsight]. Once this addition is added to Visual Studio, the user can connect to an Azure HDInsight cluster and have an integrated development environment for submitting jobs using PySpark and Hive within these clusters. 
+
