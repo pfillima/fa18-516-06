@@ -49,7 +49,7 @@ The architecture diagram for this project is shown in Figure 1.
 
 :o: figure citations not following example
 
-![ArchitectureDiagram](images/Figure1.JPG){#fig:Figure1}
+![ProjectArchitectureDiagram](images/Figure1.JPG){#fig:This figure shows the project architecture diagram.}
 
 
 The architecture is separated into five components.
@@ -68,14 +68,16 @@ The client uses a simple URL request in the format *http://localhost:5000/weathe
 
 The MongoDB database used in this project is the cloud-based MongoDB Atlas database. First a cluster needs to be setup by the user as well as a database in that cluster and a collection in that database to store the non-relational data from the REST service. The cluster used in this project is a free tier MongoDB Atlas M0 Instance cluster using version 4.0.4 on an AWS server. This cluster can provide up to 512 megabytes free data storage which will be within the limitations for this project fa18-516-06-MongoDB1.
 
-![MongoAtlasInterface](images/MongoDB.JPG){#fig:Figure2}
+![MongoAtlasInterface](images/MongoDB.JPG){#fig:This figure shows the MongoDB DBaaS Interface.}
 
 
 #### Azure SQL Database
 
 Similar to creating the cloud-based MongoDB database, an Azure SQL Database can be used. For this project, a Basic DTU-based pricing tier Azure SQL Server database server is used. The Basic pricing tier has a max total data size of 2 gigabytes and is under 5 USD per month [fa18-516-06-AzureSQL1]. Once a database server is created, we need to create a database and a table to store the data. Within the table, we need to define type specific columns for character and numeric fields and also provide metadata columns for a primary key and creation dates.
 
-![AzureSQLServerInterface](images/AzureSQL.JPG){#fig:Figure3}
+
+![AzureSQLServerInterface](images/AzureSQL.JPG){#fig:This figure shows the Azure SQL Server DBaaS Interface.}
+
 
 
 #### OpenWeatherMap API
@@ -155,12 +157,15 @@ With this first test, we want to see a JSON formatted file inserted into our Mon
 
 **Client**
 
-![ClientUsingParametertoInsertIntoMongoDB](images/ClientMongoDB.png){#fig:Figure3}
+
+![ClientUsingParametertoInsertIntoMongoDB](images/ClientMongoDB.JPG){#fig:This figure shows URL using a URL parameter.}
 
 
 **MongoDB Result**
 
-![MongoDBWebInterfaceShowingResults](images/MongoDBResults.png){#fig:Figure4}
+
+![MongoDBWebInterfaceShowingResults](images/MongoDBResults.JPG){#fig:This figure shows results inserted into MongoDB using a URL parameter.}
+
 
 We can see from figure 3 and figure 4 that the file returned in the result was committed to the MongoDB database.
 
