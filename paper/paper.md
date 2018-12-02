@@ -55,7 +55,7 @@ Once the database has been created, we can use Microsoft Visual Studio as the de
 
 :o: you need full sentence for +@fig:ConnecttoAzureSQLDatabase
 
-![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG){#fig:This figure shows connecting to an Azure SQL Database using }
+![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG){#fig:This figure shows connecting to an Azure SQL Database using Visual Studio}
 
 
 
