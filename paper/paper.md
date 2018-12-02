@@ -44,8 +44,8 @@ The creation of an Azure SQL database is very easy:
 6. Select the pricing model
 7. Click the *Create* button
 
+:o: you need full sentence for +@fig:CreateAzureSQLDatabase
 
-+@fig:CreateAzureSQLDatabase
 ![Create Azure SQL Database](images/Azure_CreateSQLDatabase.JPG){#fig:CreateAzureSQLDatabase}
 
 
@@ -53,7 +53,8 @@ The creation of an Azure SQL database is very easy:
 Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:fig:CreateAzureSQLDatabase.
 
 
-+@fig:ConnecttoAzureSQLDatabase
+:o: you need full sentence for +@fig:ConnecttoAzureSQLDatabase
+
 ![Connect to Azure SQL Database](images/Azure_SQLDBConnect.JPG){#fig:ConnecttoAzureSQLDatabase}
 
 
@@ -122,7 +123,7 @@ There are three basic parts to using Azure Stream Analytics. The first part is c
 
 ### Azure Data Lake Store and Data Lake Analytics
 
-Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System (HDFS) -compliant file system for use with big data analytics. Azure Data Lake is a cost-effective way to store scalable unstructured data in secure, active-directory environment [fa18-516-06-ADLS1].
+Data lakes are scalable repositories of data stored in its original format. The Azure Data Lake Store allows users to store data within a Hadoop Distributed File System (HDFS) -compliant file system for use with big data analytics. Azure Data Lake is a cost-effective way to store scalable unstructured data in secure, active-directory environment [@fa18-516-06-ADLS1].
 
 The latest release of Azure Data Lake in June, 2018, named Gen2, is multimodal in that there is both BLOB object storage and now file system storage. This version has a Hadoop file system with hierarchical directories which allows for higher performance than a flat object namespace. This new feature in Gen2 can eliminate unneeded REST service calls, for example in moving files. Instead of separate REST service calls for copying a file to a new location and another for deleting the file from its original location, with Gen2 this process can be done in a single operation using file system storage [@fa18-516-06-ADLS2].
 
