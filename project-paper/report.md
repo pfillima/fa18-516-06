@@ -1,4 +1,4 @@
-# Creating a RESTful API Service Using MongoDB and Azure SQL Database :hand: fa18-516-06
+# Creating a RESTful API Service Using MongoDB and Azure SQL Database :smiley: fa18-516-06
 
 | Paul Filliman
 | pfillima@iu.edu
