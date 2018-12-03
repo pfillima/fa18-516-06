@@ -8,6 +8,8 @@
 
 :o: this paper is too short to justify an abstract.
 
+:o: all references are wrong. they can not have spaces in the label.
+
 ---
 
 Keywords: Azure
