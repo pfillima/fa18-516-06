@@ -6,6 +6,8 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
+:o: this paper is too short to justify an abstract.
+
 ---
 
 Keywords: Azure
