@@ -1,4 +1,4 @@
-# Azure Data Services :wave: fa18-516-06
+# Azure Data Services :smiley: fa18-516-06
 
 | Paul Filliman
 | pfillima@iu.edu
@@ -6,7 +6,7 @@
 | hid: fa18-516-06
 | github: [:cloud:](https://github.com/cloudmesh-community/fa18-516-06/blob/master/paper/paper.md)
 
-:o: this paper is too short to justify an abstract.
+:o: this paper is too short to justify an abstract. PF: Removed abstract
 
 :o: all references are wrong. they can not have spaces in the label. PF: Removed spaces in labels.
 
