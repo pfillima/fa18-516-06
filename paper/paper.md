@@ -16,9 +16,6 @@ Keywords: Azure
 
 ---
 
-## Abstract
-
-This chapter focuses on an overview of the many data services highlights within the Microsoft Azure cloud. We detail the different relational and non-relational NoSQL databases as well as the many data analytics services.
 
 ## Database Products
 
