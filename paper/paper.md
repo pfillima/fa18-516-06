@@ -49,13 +49,13 @@ The creation of an Azure SQL database is very easy:
 7. Click the *Create* button
 
 
-![CreateAzureSQLDatabase](images/Azure_CreateSQLDatabase.JPG){#fig:This figure show adding an Azure SQL Database.}
+![CreateAzureSQLDatabase](images/Azure_CreateSQLDatabase.JPG){#fig:ThisfigureshowaddinganAzureSQLDatabase}
 
 
-Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:CreateAzureSQLDatabase.
+Once the database has been created, we can use Microsoft Visual Studio as the development tool to the new Azure SQL database, much like an on-premesis database using SQL Server Management Studio, as shown in +@fig:ThisfigureshowaddinganAzureSQLDatabase.
 
 
-![ConnecttoAzureSQLDatabase](images/Azure_SQLDBConnect.JPG){#fig:This figure shows connecting to an Azure SQL Database using Visual Studio}
+![ConnecttoAzureSQLDatabase](images/Azure_SQLDBConnect.JPG){#fig:ThisfigureshowsconnectingtoanAzureSQLDatabaseusingVisualStudio}
 
 
 
