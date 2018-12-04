@@ -48,12 +48,13 @@ The outcome will be for the client to send an HTTP request to the API server and
 The architecture diagram for this project is shown in Figure 1. 
 
 
-+@fig:ProjectArchitectureDiagram This figure shows the project architecture diagram.
++@fig:ProjectArchitectureDiagram This figure shows the project architecture diagram. 
 
 ![ProjectArchitectureDiagram](images/FA18-516-06_ProjArch.JPG){#fig:ProjectArchitectureDiagram}
 
 
 The architecture is separated into five components.
+
 
 #### API Server
 
@@ -93,7 +94,7 @@ The OpenWeatherMap public API is where we retrieve our current weather data. The
 
 ## Implementation
 
-The implementation to accomplish this project is broken up into source files in the following directories.
+The implementation to accomplish this project is broken up into source files in the following directories. 
 
 1. **/project-code/Makefile**
    This is the Makefile that is used to install the project Python requirement packages.
@@ -164,7 +165,7 @@ With this first test, we want to see a JSON formatted file inserted into our Mon
 **Client**
 
 
-+@fig:ClientUsingParametertoInsertIntoMongoDB This figure shows the URL using the parameter dbname=mongodb to insert into a collection in our MongoDB instance.
++@fig:ClientUsingParametertoInsertIntoMongoDB This Figure shows the URL using the parameter dbname=mongodb to insert into a collection in our MongoDB instance. 
 
 ![MongoAtlasInterface](images/FA18-516-06_ClientMongoDB.png){#fig:ClientUsingParametertoInsertIntoMongoDB}
 
@@ -173,23 +174,23 @@ With this first test, we want to see a JSON formatted file inserted into our Mon
 **MongoDB Result**
 
 
-+@fig:MongoDBWebInterfaceShowingResults This figure shows results inserted into MongoDB using a URL parameter.
++@fig:MongoDBWebInterfaceShowingResults This Figure shows results inserted into MongoDB using a URL parameter. 
 
 ![MongoDBWebInterfaceShowingResults](images/FA18-516-06_MongoDBResults.png){#fig:MongoDBWebInterfaceShowingResults}
 
 
 
-We can see from figure 3 and figure 4 that the file returned in the result was committed to the MongoDB database.
+We can see from Figure 3 and Figure 4 that the file returned in the result was committed to the MongoDB database.
 
 
 **Insert data into Azure SQL Database**
 
-With this second test, we again want to see the JSON formatted file inserted into our Azure SQL Server Database table upon entering the URL *http://127.0.0.1:5000/weather?dbname=azuresql* from a client web browser.
+With this second test, we again want to see the JSON formatted file inserted into our Azure SQL Server Database table upon entering the URL *http://127.0.0.1:5000/weather?dbname=azuresql* from a client web browser. 
 
 **Client**
 
 
-+@fig:ClientUsingParametertoInsertIntoAzureSQLDatabase This figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance.
++@fig:ClientUsingParametertoInsertIntoAzureSQLDatabase This Figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance. 
 
 ![ClientUsingParametertoInsertIntoAzureSQLDatabase](images/FA18-516-06_ClientAzureSQL.png){#fig:ClientUsingParametertoInsertIntoAzureSQLDatabase}
 
@@ -197,13 +198,13 @@ With this second test, we again want to see the JSON formatted file inserted int
 **Azure SQL Database Result**
 
 
-+@fig:AzureSQLServerWebInterfaceShowingResults This figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance.
++@fig:AzureSQLServerWebInterfaceShowingResults This Figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance. 
 
 ![AzureSQLServerWebInterfaceShowingResults](images/FA18-516-06_AzureResult.png){#fig:AzureSQLServerWebInterfaceShowingResults}
 
 
 
-We can see from figure 5 and figure 6 that the file returned in the result was committed as a row into the prior specified Azure SQL Server database table.
+We can see from Figure 5 and Figure 6 that the file returned in the result was committed as a row into the prior specified Azure SQL Server database table.
 
 We see from these results that our REST API is working, retrieving real-time weather data through a web API and inserting these rows into either a MongoDB database or a Microsoft Azure SQL Server database.
 
