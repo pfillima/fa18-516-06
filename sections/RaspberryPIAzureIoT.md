@@ -35,7 +35,9 @@ Once the IoT Hub has been created in steps 1 through 5 above, the Raspberry Pi c
 11. Create a new user other than su for Raspberry Pi
 
 
-![Raspberry Pi Adding a New User](images/RPiconfig.png){#fig:This figure shows adding a new user in Raspbian.}
++@fig:RaspberryPiAddingNewUser This figure shows adding a new user in Raspbian. 
+
+![RaspberryPiAddingNewUser](images/RPiconfig.png){#fig:RaspberryPiAddingNewUser}
 
 
 ``` bash
@@ -64,21 +66,27 @@ Finally, we use the client to connect to RaspberryPI
 14. On the client machine, open PuTTY and enter the Raspberry PI IP address.
 
 
-![Raspberry Pi Connecting to Raspberry Pi](images/RPIPutty.JPG){#fig:This figure shows connecting to Raspberry Pi from Windows using PuTTY.}{#fig:Figure 1}
++@fig:ConnectingRaspberryPiPuTTY TThis figure shows connecting to Raspberry Pi from Windows using PuTTY. 
+
+![ConnectingRaspberryPiPuTTY](images/RPIPutty.JPG){#fig:ConnectingRaspberryPiPuTTY}
+
 
 
 15. When the PuTTY terminal opens, enter the userid created in step 11
 
 
-![Connecting to Raspberry Pi](images/RPIConnect.JPG){#fig:This figure shows connecting to Rasperry Pi through Windows.}
++@fig:ConnectingRaspberryPi This figure shows connecting to Rasperry Pi through Windows. 
+
+![ConnectingRaspberryPi](images/RPIConnect.JPG){#fig:ConnectingRaspberryPi}
+
 
 
 We can see under the Azure IoT Hub Metrics under *Monitoring* that we have a device signal from the Raspberry Pi configured above.
 
 
++@fig:AzureIoTHubActivity This figure shows activity from the connected Raspberry Pi in Azure IoT Hub. 
 
-![Azure IoT Hub Activity](images/RPIConnect.JPG){#fig:This figure shows activity from the connected Raspberry Pi in Azure IoT Hub.}
-
+![AzureIoTHubActivity](images/RPIActivity.JPG){#fig:AzureIoTHubActivity}
 
 
 
