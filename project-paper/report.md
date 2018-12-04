@@ -166,16 +166,16 @@ With this first test, we want to see a JSON formatted file inserted into our Mon
 
 +@fig:ClientUsingParametertoInsertIntoMongoDB This figure shows the URL using the parameter dbname=mongodb to insert into a collection in our MongoDB instance.
 
-![MongoAtlasInterface](images/FA18-516-06_ClientMongoDB.JPG){#fig:ClientUsingParametertoInsertIntoMongoDB}
+![MongoAtlasInterface](images/FA18-516-06_ClientMongoDB.png){#fig:ClientUsingParametertoInsertIntoMongoDB}
+
 
 
 **MongoDB Result**
 
 
-
 +@fig:MongoDBWebInterfaceShowingResults This figure shows results inserted into MongoDB using a URL parameter.
 
-![MongoDBWebInterfaceShowingResults](images/FA18-516-06_ClientMongoDB.JPG){#fig:MongoDBWebInterfaceShowingResults}
+![MongoDBWebInterfaceShowingResults](images/FA18-516-06_MongoDBResults.png){#fig:MongoDBWebInterfaceShowingResults}
 
 
 
@@ -191,16 +191,15 @@ With this second test, we again want to see the JSON formatted file inserted int
 
 +@fig:ClientUsingParametertoInsertIntoAzureSQLDatabase This figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance.
 
-![ClientUsingParametertoInsertIntoAzureSQLDatabase](images/FA18-516-06_ClientAzureSQL.JPG){#fig:ClientUsingParametertoInsertIntoAzureSQLDatabase}
+![ClientUsingParametertoInsertIntoAzureSQLDatabase](images/FA18-516-06_ClientAzureSQL.png){#fig:ClientUsingParametertoInsertIntoAzureSQLDatabase}
 
 
 **Azure SQL Database Result**
 
 
-
 +@fig:AzureSQLServerWebInterfaceShowingResults This figure shows the URL using the parameter dbname=azuresql to insert into a table in our Azure SQL Database instance.
 
-![AzureSQLServerWebInterfaceShowingResults](images/FA18-516-06_AzureResult.JPG){#fig:AzureSQLServerWebInterfaceShowingResults}
+![AzureSQLServerWebInterfaceShowingResults](images/FA18-516-06_AzureResult.png){#fig:AzureSQLServerWebInterfaceShowingResults}
 
 
 
