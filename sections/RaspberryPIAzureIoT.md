@@ -1,4 +1,4 @@
-# Connecting a Raspberry Pi to the Azure IoT Hub
+# Connecting a Raspberry Pi to the Azure IoT Hub :smiley:
 
 Microsoft Azure IoT Hub can connect a wide variety of devices and in this section we will show how to connect a Raspberry Pi to the Azure IoT. Many projects can be built using Raspberry Pi and connecting these projects to Azure IoT Hub can allow them to communicate with other devices.
 
