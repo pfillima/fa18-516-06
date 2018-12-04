@@ -1,4 +1,4 @@
-# Microsoft Visual Studio Cloud Computing Tools
+# Microsoft Visual Studio Cloud Computing Tools :smiley:
 
 
 Microsoft Visual Studio contains various component tools that allow developers to create and utilize cloud services in Microsoft Azure as well as Amazon Web Services and the Google Cloud Platform. In this section, we discuss the some of the many important tools with which we do this. These tools can be found in the Visual Studio Marketplace.
