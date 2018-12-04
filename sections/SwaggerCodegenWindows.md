@@ -32,5 +32,21 @@ The following are steps to use Swagger-Codegen on a Windows 10 system.
 
 ```
 
-5. 
+5. Download swagger-codegen-cli-2.3.1.jar using the following command in the /swagger directory
+
+``` bash
+
+> wget http://central.maven.org/maven2/io/swagger/swagger-codegen-cli/2.3.1/swagger-codegen-cli-2.3.1.jar -O swagger-codegen-cli.jar
+
+```
+
+6. Finally, with a yaml file in /cloudmesh and swagger-codegen-cli-2.3.1.jar in the /cloudmesh/swagger directory, run the following command to generate the swagger-codegen output using python flask.
+
+``` bash
+
+> java -jar swagger-codegen-cli.jar generate -i ../cpu.yaml -l python-flask -o ../swagger_example/server/cpu/flaskConnection -D supportPython2=true
+
+```
+
+
 
