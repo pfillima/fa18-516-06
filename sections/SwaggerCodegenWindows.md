@@ -1,4 +1,4 @@
-## Setting up Swagger Codegen on Windows 10
+## Setting up Swagger Codegen on Windows 10 :smiley:
 
 ### Prerequisites
 
