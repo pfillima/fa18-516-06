@@ -51,6 +51,15 @@ The following are steps to use Swagger-Codegen on a Windows 10 system.
 Now we see that within the /cloudmesh directory we have a *swagger_example* directory with subdirectories containing the codegen output.
 
 
++@fig:PowerShellCodegen This figure shows the Swagger-Codegen output using PowerShell in Windows 10.
+
+![PowerShellCodegen](images/PowerShell_WindowsCodegen.JPG){#fig:PowerShellCodegen}
+
+
+
+
+
+
 
 
 
