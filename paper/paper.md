@@ -1,4 +1,4 @@
-# Azure Data Services :smiley: fa18-516-06
+# Azure Data Services
 
 | Paul Filliman
 | pfillima@iu.edu
