@@ -21,8 +21,6 @@ This chapter focuses on an overview of the many data services highlights within 
 
 ### Azure SQL Database
 
-#### Overview
-
 The Azure SQL database is the cloud-based, SQL Server database as a service, relational database engine using the latest version of the SQL Server. There are many advantages to using an Azure SQL database as opposed to an on-premises SQL Server database platform. There are also many pricing level choices based on a function of hardware resources used.
 
 #### Advantages
