@@ -30,12 +30,12 @@ cloudmesh:
         network:                    'cmnetwork'
       credentials:
         AZURE_TENANT_ID:            'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
-        AZURE_SUBSCRIPTION_ID:      '8b278fc5-e24f-464c-959d-8edf6391fae9'
+        AZURE_SUBSCRIPTION_ID:      ''
         AZURE_APPLICATION_ID:       'xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx'
         AZURE_SQLDATABASESERVER:    'pfillimansql.database.windows.net'
         AZURE_DATABASENAME:         'AdvWorksLT'
-        AZURE_SQLSERVER_USERID:     'sqladmin@pfillimansql'
-        AZURE_SECRET_KEY:           'SqlDba123'
+        AZURE_SQLSERVER_USERID:     ''
+        AZURE_SECRET_KEY:           ''
         AZURE_SQL_DRIVER:           '{ODBC Driver 13 for SQL Server}'
         AZURE_MANAGEMENT_CERT_PATH: 'C:/Demo/azure_cert.pem'
   data:
